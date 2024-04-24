@@ -1,6 +1,0 @@
-{"query": "sculpture", "prompt": "A modern Website for clothing Brand hoddies with Greek God Statue"}
-{"query": "sculpture", "prompt": "A rotten wood sculpture of a abstract simple dancer in a lodge, mushrooms, black and white paint melted, dust, sand, dead flowers, hd render, beautiful light, hyperrealist"}
-{"query": "sculpture", "prompt": "A Statue from a muscular Greek god Statue with a wavey middle Parting Hair with Standing on a podest animated style 8k Doing the Apollo Pose Drawed in black and white"}
-{"query": "sculpture", "prompt": "simple logo for a clothing Brand from a muscular Statue, the Statue is black and the backround white"}
-{"query": "sculpture", "prompt": "simple muscular greek god statue with middelparting hair with white body with dark background 8k wearing a hoodie thinking position rgb lights"}
-{"query": "sculpture", "prompt": "sculptor creating a sculpture, surreal style, detailing."}

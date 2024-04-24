@@ -5,7 +5,6 @@ import time
 from openai import OpenAI
 
 
-
 class Agent:
     def __init__(self, api_key=None, org=None) -> None:
         self.client = OpenAI(api_key=api_key, organization=org)

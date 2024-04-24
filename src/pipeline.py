@@ -175,7 +175,13 @@ class AgentsPipline:
                 self.query_to_prompt[q].append(prompt_score_tuple)
 
                 # fetch prompt from lexico and add the tuple into all prompt pool
-                # TODO: here fetch the prompt from lexica
+                # lexica_prompts = self.fetch_prompts_from_lexica(q)
+                lexica_prompts = self.fetch_prompts_from_jsonl(q, file_path="data/lexica_prompts.jsonl")
+                lexica_prompts = random.sample(lexica_prompts, k=min(5, len(lexica_prompts)))
+                for lex_prompt in lexica_prompts:
+                    lexica_prompt_score_tuple = (lex_prompt, self.loss_compute_and_track_batch(
+                        {'prompt': lex_prompt, 'instruction': None, 'source': 'lexica', "query": q}))
+                    self.query_to_prompt[q].append(lexica_prompt_score_tuple)
 
                 self.query_to_prompt[q] = sorted(self.query_to_prompt[q], key=lambda x: x[1])
 

@@ -110,7 +110,7 @@ class AgentsPipline:
         os.makedirs("./SD_images", exist_ok=True)
         image_path = os.path.join("./SD_images", file_name)
         image.save(image_path)
-        loss = self.scorer.get_loss(image_path, prompt)
+        loss = self.scorer.get_loss(image_path, prompt_info['query'])
         print(f" loss: {loss}")
 
         return loss

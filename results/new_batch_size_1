@@ -1,0 +1,1266 @@
+
+Iteration 1/10
+completed
+100% 50/50 [00:10<00:00,  4.88it/s]
+open_clip_pytorch_model.bin: 100% 3.94G/3.94G [00:47<00:00, 83.8MB/s]
+HPS_v2_compressed.pt: 100% 1.97G/1.97G [01:40<00:00, 19.6MB/s]
+score:26.3671875
+ loss: 26.3671875
+100% 50/50 [00:10<00:00,  4.80it/s]
+score:26.6357421875
+ loss: 26.6357421875
+100% 50/50 [00:10<00:00,  4.70it/s]
+score:24.21875
+ loss: 24.21875
+100% 50/50 [00:10<00:00,  4.56it/s]
+score:26.8310546875
+ loss: 26.8310546875
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:25.537109375
+ loss: 25.537109375
+100% 50/50 [00:11<00:00,  4.20it/s]
+score:26.3427734375
+ loss: 26.3427734375
+26.3671875
+top_instr:{'This is the original prompt that you need to carefully refine': {'batch_loss': 26.3671875, 'querys': {'Market with vendors': ('Refined Prompt: A bustling marketplace filled with colorful stalls and vendors selling a variety of goods such as fresh produce, vibrant textiles, handmade crafts, and delectable street food. The scene is lively and teeming with activity as customers browse, haggle, and engage with the vendors in a vibrant display of local culture and commerce.', 26.3671875)}}}
+Iteration 1/10 --- Average loss in the instruction where source is 'generated': 26.3671875
+highest_score_instruction:This is the original prompt that you need to carefully refine, score26.3671875
+dict_items([('Market with vendors', ('Refined Prompt: A bustling marketplace filled with colorful stalls and vendors selling a variety of goods such as fresh produce, vibrant textiles, handmade crafts, and delectable street food. The scene is lively and teeming with activity as customers browse, haggle, and engage with the vendors in a vibrant display of local culture and commerce.', 26.3671875))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:This is the original prompt that you need to carefully refine
+ and first corresponding generated low score prompts group:
+low_score_object0:Market with vendors, low_score_generated_prompt:Refined Prompt: A bustling marketplace filled with colorful stalls and vendors selling a variety of goods such as fresh produce, vibrant textiles, handmade crafts, and delectable street food. The scene is lively and teeming with activity as customers browse, haggle, and engage with the vendors in a vibrant display of local culture and commerce., score:26.3671875
+below is high score prompts group:
+high_score_object0:Market with vendors, high_score_prompt:Anglo saxon large street market,score:26.8310546875
+completed
+analyze_and_propose: Summary of Reasons for Scores:Low Score Prompts:
+1. Prompt: Refined Prompt: A bustling marketplace filled with colorful stalls and vendors selling a variety of goods such as fresh produce, vibrant textiles, handmade crafts, and delectable street food. The scene is lively and teeming with activity as customers browse, haggle, and engage with the vendors in a vibrant display of local culture and commerce.
+   Score: 26.3671875
+
+High Score Prompt:
+1. Prompt: Anglo saxon large street market
+   Score: 26.8310546875
+
+Inference 1: The low score prompts are overly detailed and elaborate compared to the high score prompt. They contain excessive information and intricate descriptions that may dilute the main focus of the prompt, leading to a lack of clarity and focus.
+
+Improvement 1: Simplify the generated prompts by focusing on capturing the essence of the original prompt concisely. Avoid overly embellished descriptions and stick to highlighting key elements to maintain clarity and coherence in the responses.
+
+Inference 2: The low score prompts lack a clear and distinct angle or perspective that sets them apart from a general description. They may lack a unique or specific interpretation of the original prompt, which can result in a generic and uninspiring response.
+
+Improvement 2: Encourage the generated prompts to incorporate a unique angle, perspective, or distinctive feature that adds depth and originality to the response. This can enhance the creativity and engagement of the prompts, leading to more compelling outputs.
+
+Inference 3: The low score prompts exhibit a lack of creativity in exploring different approaches to interpreting the original prompt. They may rely too heavily on straightforward descriptions without incorporating imaginative or novel elements that could make the responses more captivating.
+
+Improvement 3: Encourage the prompts to explore unconventional or creative interpretations of the original prompt. Encouraging a diverse range of responses that think outside the box can foster innovation and intrigue in the generated prompts, elevating their quality and appeal.
+analyze_and_propose: improvement: Simplify the generated prompts by focusing on capturing the essence of the original prompt concisely. Avoid overly embellished descriptions and stick to highlighting key elements to maintain clarity and coherence in the responses.
+completed
+analyze_and_propose: Updated Instruction: Generate concise and engaging prompts capturing the essence of diverse scenes or subjects, focusing on key elements to maintain clarity and coherence in the responses.
+analyze_and_propose: improvement: Encourage the generated prompts to incorporate a unique angle, perspective, or distinctive feature that adds depth and originality to the response. This can enhance the creativity and engagement of the prompts, leading to more compelling outputs.
+completed
+analyze_and_propose: Updated Instruction: Generate diverse and imaginative prompts that offer a unique perspective or feature to inspire creative and engaging responses.
+analyze_and_propose: improvement: Encourage the prompts to explore unconventional or creative interpretations of the original prompt. Encouraging a diverse range of responses that think outside the box can foster innovation and intrigue in the generated prompts, elevating their quality and appeal.
+completed
+analyze_and_propose: Updated Instruction: Generate prompts that encourage unconventional and creative interpretations, fostering innovation and intrigue in the responses.
+
+Iteration 2/10
+completed
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:26.7822265625
+ loss: 26.7822265625
+Token indices sequence length is longer than the specified maximum sequence length for this model (132 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', lot of people around the horse, one man happy fan in centre only, evening, happy emotion, sunset, saturation colors, warm color palette, lots of people in the foreground with their hands in the air, open stadium on the background, sunset weather, foreground hands']
+Token indices sequence length is longer than the specified maximum sequence length for this model (132 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', lot of people around the horse, one man happy fan in centre only, evening, happy emotion, sunset, saturation colors, warm color palette, lots of people in the foreground with their hands in the air, open stadium on the background, sunset weather, foreground hands']
+100% 50/50 [00:11<00:00,  4.18it/s]
+score:24.74365234375
+ loss: 24.74365234375
+100% 50/50 [00:11<00:00,  4.17it/s]
+score:26.3427734375
+ loss: 26.3427734375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', close up frame, cinematic shot, sport competition, epic, keeneland sales, inside hall with stands, lot of armchairs']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', close up frame, cinematic shot, sport competition, epic, keeneland sales, inside hall with stands, lot of armchairs']
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:25.8544921875
+ loss: 25.8544921875
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:26.3427734375
+ loss: 26.3427734375
+100% 50/50 [00:11<00:00,  4.48it/s]
+score:26.7333984375
+ loss: 26.7333984375
+26.7822265625
+completed
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:27.587890625
+ loss: 27.587890625
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:27.880859375
+ loss: 27.880859375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:26.904296875
+ loss: 26.904296875
+100% 50/50 [00:11<00:00,  4.35it/s]
+score:26.2939453125
+ loss: 26.2939453125
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', lot of people around the horse, one man happy fan in centre only, evening, happy emotion, sunset, saturation colors, warm color palette, lots of people in the foreground with their hands in the air, open stadium on the background, sunset weather, foreground hands']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', lot of people around the horse, one man happy fan in centre only, evening, happy emotion, sunset, saturation colors, warm color palette, lots of people in the foreground with their hands in the air, open stadium on the background, sunset weather, foreground hands']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:23.6328125
+ loss: 23.6328125
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:24.9755859375
+ loss: 24.9755859375
+27.587890625
+completed
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.0751953125
+ loss: 27.0751953125
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:26.4404296875
+ loss: 26.4404296875
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:26.6357421875
+ loss: 26.6357421875
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:25.1708984375
+ loss: 25.1708984375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', close up frame, cinematic shot, sport competition, epic, keeneland sales, inside hall with stands, lot of armchairs']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', close up frame, cinematic shot, sport competition, epic, keeneland sales, inside hall with stands, lot of armchairs']
+100% 50/50 [00:11<00:00,  4.39it/s]
+score:25.9033203125
+ loss: 25.9033203125
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.220703125
+ loss: 26.220703125
+27.0751953125
+top_instr:{'Generate diverse and imaginative prompts that offer a unique perspective or feature to inspire creative and engaging responses.': {'batch_loss': 27.587890625, 'querys': {'A medieval joust': ('Refined Prompt: In a reimagined futuristic world, technologically enhanced knights engage in a high-speed jousting match using hover mounts and energy lances. Spectators watch in awe as neon lights illuminate the arena, highlighting the fusion of ancient tradition with advanced innovation in a dazzling display of skill and strategy.', 27.587890625)}}, 'Generate prompts that encourage unconventional and creative interpretations, fostering innovation and intrigue in the responses.': {'batch_loss': 27.0751953125, 'querys': {'A medieval joust': ('Refined Prompt: Transported to a parallel dimension, mythical creatures like dragons and unicorns participate in an epic jousting tournament alongside armored warriors. The clash of magic and steel creates a fantastical spectacle, blending medieval tradition with whimsical fantasy elements in a mesmerizing display of courage and imagination.', 27.0751953125)}}, 'Generate concise and engaging prompts capturing the essence of diverse scenes or subjects, focusing on key elements to maintain clarity and coherence in the responses.': {'batch_loss': 26.7822265625, 'querys': {'A medieval joust': ('Refined Prompt: Knights in shining armor atop majestic horses charge at each other with lances in a medieval jousting tournament. The crowd roars as the competitors clash, showcasing skill, bravery, and chivalry in a thrilling display of honor and valor.', 26.7822265625)}}}
+Iteration 2/10 --- Average loss in the instruction where source is 'generated': 27.1484375
+highest_score_instruction:Generate diverse and imaginative prompts that offer a unique perspective or feature to inspire creative and engaging responses., score27.587890625
+dict_items([('A medieval joust', ('Refined Prompt: Knights in shining armor atop majestic horses charge at each other with lances in a medieval jousting tournament. The crowd roars as the competitors clash, showcasing skill, bravery, and chivalry in a thrilling display of honor and valor.', 26.7822265625))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Generate concise and engaging prompts capturing the essence of diverse scenes or subjects, focusing on key elements to maintain clarity and coherence in the responses.
+ and first corresponding generated low score prompts group:
+low_score_object0:A medieval joust, low_score_generated_prompt:Refined Prompt: Knights in shining armor atop majestic horses charge at each other with lances in a medieval jousting tournament. The crowd roars as the competitors clash, showcasing skill, bravery, and chivalry in a thrilling display of honor and valor., score:26.7822265625
+below is high score prompts group:
+high_score_object0:A medieval joust, high_score_prompt:Knights, jousting,score:27.880859375
+completed
+analyze_and_propose: Summary of Reasons for Scores:Low Score Prompts:
+1. Prompt: Refined Prompt: Knights in shining armor atop majestic horses charge at each other with lances in a medieval jousting tournament. The crowd roars as the competitors clash, showcasing skill, bravery, and chivalry in a thrilling display of honor and valor.
+   Score: 26.7822265625
+
+High Score Prompt:
+1. Prompt: Knights, jousting
+   Score: 27.880859375
+
+Inference 1: The low score prompts in this batch are still relatively detailed and elaborate despite the instruction emphasizing concise and engaging prompts. The descriptions contain intricate details that may overshadow the primary focus, leading to potential scoring deductions.
+
+Improvement 1: Refine the instruction to emphasize a balance between conciseness and engagement. Encourage the generation of prompts that capture the essence of the scene or subject in a more compact and focused manner while still being captivating. Encouraging prompts to be succinct yet impactful can help improve the overall quality of responses.
+
+Inference 2: The low score prompts exhibit an excess of embellishments and embellishments that may detract from the clarity and coherence of the prompts. The intricate details and elaborate descriptions could potentially overwhelm the main theme of the prompt, resulting in a less effective response.
+
+Improvement 2: Provide specific guidelines on the level of detail and embellishment allowed in the prompts. Encourage the generation of concise prompts that highlight the core elements of the scene or subject without getting lost in unnecessary complexity. Setting clear boundaries on the level of elaboration can help streamline the prompts and enhance their effectiveness.
+
+Inference 3: The low score prompts may lack a distinct focus on key elements that define the scene or subject. While they aim to be engaging and descriptive, they might lose sight of the essential components that should be highlighted, leading to a less impactful and coherent prompt.
+
+Improvement 3: Offer examples or specific pointers on the key elements that should be emphasized in generating prompts. Encourage the prompts to focus on capturing the essential features of the scene or subject that are most relevant and impactful, ensuring that the prompts effectively convey the core essence within a concise and engaging framework. This guidance can help improve the clarity and coherence of the generated prompts.
+analyze_and_propose: improvement: Refine the instruction to emphasize a balance between conciseness and engagement. Encourage the generation of prompts that capture the essence of the scene or subject in a more compact and focused manner while still being captivating. Encouraging prompts to be succinct yet impactful can help improve the overall quality of responses.
+completed
+analyze_and_propose: Updated Instruction: Generate succinct and captivating prompts that convey the essence of various scenes or subjects effectively, focusing on key elements to ensure clarity and coherence in the responses.
+analyze_and_propose: improvement: Provide specific guidelines on the level of detail and embellishment allowed in the prompts. Encourage the generation of concise prompts that highlight the core elements of the scene or subject without getting lost in unnecessary complexity. Setting clear boundaries on the level of elaboration can help streamline the prompts and enhance their effectiveness.
+completed
+analyze_and_propose: Updated Instruction: Craft succinct and compelling prompts that highlight the essential elements of various scenes or subjects, maintaining clarity and coherence in the responses by avoiding unnecessary complexity and embellishment.
+analyze_and_propose: improvement: Offer examples or specific pointers on the key elements that should be emphasized in generating prompts. Encourage the prompts to focus on capturing the essential features of the scene or subject that are most relevant and impactful, ensuring that the prompts effectively convey the core essence within a concise and engaging framework. This guidance can help improve the clarity and coherence of the generated prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft concise and compelling prompts that effectively capture the core elements of diverse scenes or subjects, ensuring clarity and coherence in the responses. Focus on highlighting essential features that convey the essence of the scene or subject within a succinct and engaging framework.
+
+Iteration 3/10
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['natural wonders, inviting travelers to embark on extraordinary journeys beyond the stars.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['natural wonders, inviting travelers to embark on extraordinary journeys beyond the stars.']
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:24.69482421875
+ loss: 24.69482421875
+100% 50/50 [00:11<00:00,  4.18it/s]
+score:25.4638671875
+ loss: 25.4638671875
+100% 50/50 [00:11<00:00,  4.19it/s]
+score:27.0751953125
+ loss: 27.0751953125
+100% 50/50 [00:11<00:00,  4.35it/s]
+score:25.3662109375
+ loss: 25.3662109375
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:25.1708984375
+ loss: 25.1708984375
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:25.341796875
+ loss: 25.341796875
+24.69482421875
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['ades and fantastical discoveries.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['ades and fantastical discoveries.']
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:24.08447265625
+ loss: 24.08447265625
+100% 50/50 [00:11<00:00,  4.26it/s]
+score:24.86572265625
+ loss: 24.86572265625
+100% 50/50 [00:11<00:00,  4.25it/s]
+score:24.84130859375
+ loss: 24.84130859375
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:27.44140625
+ loss: 27.44140625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:28.3447265625
+ loss: 28.3447265625
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:24.86572265625
+ loss: 24.86572265625
+24.08447265625
+completed
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:27.8076171875
+ loss: 27.8076171875
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:24.86572265625
+ loss: 24.86572265625
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:26.0498046875
+ loss: 26.0498046875
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:25.146484375
+ loss: 25.146484375
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:26.0986328125
+ loss: 26.0986328125
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:28.125
+ loss: 28.125
+27.8076171875
+completed
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:27.1240234375
+ loss: 27.1240234375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:28.515625
+ loss: 28.515625
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:21.27685546875
+ loss: 21.27685546875
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:27.6123046875
+ loss: 27.6123046875
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:28.0517578125
+ loss: 28.0517578125
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:25.0
+ loss: 25.0
+27.1240234375
+completed
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:27.7099609375
+ loss: 27.7099609375
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:24.74365234375
+ loss: 24.74365234375
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:25.4638671875
+ loss: 25.4638671875
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:24.96337890625
+ loss: 24.96337890625
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:24.84130859375
+ loss: 24.84130859375
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:22.18017578125
+ loss: 22.18017578125
+27.7099609375
+top_instr:{'Generate succinct and captivating prompts that convey the essence of various scenes or subjects effectively, focusing on key elements to ensure clarity and coherence in the responses.': {'batch_loss': 27.8076171875, 'querys': {'Airport with planes taking off': ('Refined Prompt: A modern airport runway where commercial jets soar into a vibrant sunset, leaving a trail of fluffy clouds in their wake. Passengers watch from the terminal, filled with a sense of wanderlust and anticipation for their upcoming adventures to distant lands. The scene embodies the thrill of travel and the promise of new horizons waiting to be explored.', 27.8076171875)}}, 'Craft concise and compelling prompts that effectively capture the core elements of diverse scenes or subjects, ensuring clarity and coherence in the responses. Focus on highlighting essential features that convey the essence of the scene or subject within a succinct and engaging framework.': {'batch_loss': 27.7099609375, 'querys': {'Airport with planes taking off': ('Refined Prompt: The dynamic scene at an airport runway as planes take off into the vast sky, leaving behind a trail of white clouds. Travelers watch eagerly from the terminals, ready to embark on their journeys to new destinations. This fast-paced moment encapsulates the essence of anticipation and exploration in the realm of air travel.', 27.7099609375)}}, 'Craft succinct and compelling prompts that highlight the essential elements of various scenes or subjects, maintaining clarity and coherence in the responses by avoiding unnecessary complexity and embellishment.': {'batch_loss': 27.1240234375, 'querys': {'Airport with planes taking off': ('Refined Prompt: An airport runway bustling with activity as planes gracefully ascend into the sky, their engines roaring with power. Travelers gaze out from the terminal, filled with excitement and the promise of new destinations. The scene captures the essence of air travel, with a sense of freedom and anticipation lingering in the air.', 27.1240234375)}}}
+Iteration 3/10 --- Average loss in the instruction where source is 'generated': 27.547200520833332
+highest_score_instruction:Generate succinct and captivating prompts that convey the essence of various scenes or subjects effectively, focusing on key elements to ensure clarity and coherence in the responses., score27.8076171875
+dict_items([('Airport with planes taking off', ('Refined Prompt: An airport runway bustling with activity as planes gracefully ascend into the sky, their engines roaring with power. Travelers gaze out from the terminal, filled with excitement and the promise of new destinations. The scene captures the essence of air travel, with a sense of freedom and anticipation lingering in the air.', 27.1240234375))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft succinct and compelling prompts that highlight the essential elements of various scenes or subjects, maintaining clarity and coherence in the responses by avoiding unnecessary complexity and embellishment.
+ and first corresponding generated low score prompts group:
+low_score_object0:Airport with planes taking off, low_score_generated_prompt:Refined Prompt: An airport runway bustling with activity as planes gracefully ascend into the sky, their engines roaring with power. Travelers gaze out from the terminal, filled with excitement and the promise of new destinations. The scene captures the essence of air travel, with a sense of freedom and anticipation lingering in the air., score:27.1240234375
+below is high score prompts group:
+high_score_object0:Airport with planes taking off, high_score_prompt:A realistic 4hd photo image representing an airport and aircraft,score:28.515625
+completed
+analyze_and_propose: Summary of Reasons for Scores:Low Score Prompts:
+1. Prompt: Refined Prompt: An airport runway bustling with activity as planes gracefully ascend into the sky, their engines roaring with power. Travelers gaze out from the terminal, filled with excitement and the promise of new destinations. The scene captures the essence of air travel, with a sense of freedom and anticipation lingering in the air.
+   Score: 27.1240234375
+
+High Score Prompt:
+1. Prompt: A realistic 4hd photo image representing an airport and aircraft
+   Score: 28.515625
+
+Inference 1: The low score prompts still contain an excess of description and elaboration, deviating from the instruction emphasizing conciseness and clarity. The prompts consist of detailed and vivid imagery that could potentially detract from the primary focus of highlighting essential elements, leading to a decrease in effectiveness.
+
+Improvement 1: Reinforce the importance of crafting succinct prompts that directly communicate the core elements of the scene or subject. Encourage brevity and clarity in the prompts, focusing on essential details while avoiding unnecessary embellishments. Providing examples of concise yet compelling prompts can assist in guiding the generation of more effective responses.
+
+Inference 2: The low score prompts lack a direct and straightforward approach to highlighting the essential elements of the scene. The descriptions, although engaging, may overshadow the key components that define the airport scene with planes taking off, resulting in a less focused and coherent prompt.
+
+Improvement 2: Encourage the generation of prompts that prioritize the fundamental aspects of the scene or subject in a clear and concise manner. Emphasize the importance of identifying and effectively communicating the essential elements that characterize the airport with planes taking off. Providing prompts that are succinct yet impactful can help maintain focus and coherence in the responses, enhancing the overall quality of the generated prompts.
+
+Inference 3: The low score prompts may lack a specific and distinct angle or focus that sets them apart from generic descriptions. They may miss out on incorporating unique or unconventional elements that could make the prompts more engaging and memorable, leading to a less compelling response.
+
+Improvement 3: Prompt the generation of prompts with a specific angle or perspective that adds depth and originality to the description of the scene. Encourage thinking outside the box and exploring creative interpretations of the airport scene with planes taking off to create prompts that stand out and capture the audience's attention. By emphasizing uniqueness and innovation, the quality and effectiveness of the prompts can be enhanced.
+analyze_and_propose: improvement: Reinforce the importance of crafting succinct prompts that directly communicate the core elements of the scene or subject. Encourage brevity and clarity in the prompts, focusing on essential details while avoiding unnecessary embellishments. Providing examples of concise yet compelling prompts can assist in guiding the generation of more effective responses.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment.
+analyze_and_propose: improvement: Encourage the generation of prompts that prioritize the fundamental aspects of the scene or subject in a clear and concise manner. Emphasize the importance of identifying and effectively communicating the essential elements that characterize the airport with planes taking off. Providing prompts that are succinct yet impactful can help maintain focus and coherence in the responses, enhancing the overall quality of the generated prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the core aspects of various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize essential details to characterize the scene or subject, maintaining focus and impact while avoiding unnecessary complexity and embellishment.
+analyze_and_propose: improvement: Prompt the generation of prompts with a specific angle or perspective that adds depth and originality to the description of the scene. Encourage thinking outside the box and exploring creative interpretations of the airport scene with planes taking off to create prompts that stand out and capture the audience's attention. By emphasizing uniqueness and innovation, the quality and effectiveness of the prompts can be enhanced.
+completed
+analyze_and_propose: Updated Instruction: Craft unique and innovative prompts that offer a fresh angle or perspective on various scenes or subjects, capturing the audience's attention with creativity and originality while maintaining clarity and coherence in the responses. Prioritize depth and distinctiveness to enhance the quality and effectiveness of the prompts, avoiding unnecessary complexity and embellishment.
+
+Iteration 4/10
+completed
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:26.26953125
+ loss: 26.26953125
+100% 50/50 [00:11<00:00,  4.20it/s]
+score:26.0009765625
+ loss: 26.0009765625
+100% 50/50 [00:12<00:00,  4.16it/s]
+score:23.59619140625
+ loss: 23.59619140625
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:26.07421875
+ loss: 26.07421875
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:25.48828125
+ loss: 25.48828125
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:26.3427734375
+ loss: 26.3427734375
+26.26953125
+completed
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.9775390625
+ loss: 26.9775390625
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:25.9765625
+ loss: 25.9765625
+100% 50/50 [00:11<00:00,  4.26it/s]
+score:23.779296875
+ loss: 23.779296875
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:25.830078125
+ loss: 25.830078125
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.4404296875
+ loss: 26.4404296875
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.8798828125
+ loss: 26.8798828125
+26.9775390625
+completed
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:27.392578125
+ loss: 27.392578125
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:26.953125
+ loss: 26.953125
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:22.54638671875
+ loss: 22.54638671875
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:25.390625
+ loss: 25.390625
+100% 50/50 [00:11<00:00,  4.40it/s]
+score:26.7333984375
+ loss: 26.7333984375
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:25.2197265625
+ loss: 25.2197265625
+27.392578125
+completed
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:27.05078125
+ loss: 27.05078125
+100% 50/50 [00:11<00:00,  4.33it/s]
+score:26.025390625
+ loss: 26.025390625
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:23.828125
+ loss: 23.828125
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:23.53515625
+ loss: 23.53515625
+100% 50/50 [00:11<00:00,  4.39it/s]
+score:25.244140625
+ loss: 25.244140625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.755859375
+ loss: 24.755859375
+27.05078125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['awareness converge to redefine the zoo experience.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['awareness converge to redefine the zoo experience.']
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:27.24609375
+ loss: 27.24609375
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:25.390625
+ loss: 25.390625
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:26.2939453125
+ loss: 26.2939453125
+100% 50/50 [00:11<00:00,  4.35it/s]
+score:24.54833984375
+ loss: 24.54833984375
+100% 50/50 [00:11<00:00,  4.40it/s]
+score:26.9287109375
+ loss: 26.9287109375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:23.15673828125
+ loss: 23.15673828125
+27.24609375
+top_instr:{'Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment.': {'batch_loss': 27.392578125, 'querys': {'Zoo with elephants': ('Refined Prompt: At the zoo, a serene enclosure houses magnificent elephants, their imposing yet gentle presence captivating visitors. People watch in admiration as these intelligent creatures interact with each other and with their environment. This scene evokes a sense of wonder and appreciation for the beauty of nature and wildlife in a peaceful setting.', 27.392578125)}}, "Craft unique and innovative prompts that offer a fresh angle or perspective on various scenes or subjects, capturing the audience's attention with creativity and originality while maintaining clarity and coherence in the responses. Prioritize depth and distinctiveness to enhance the quality and effectiveness of the prompts, avoiding unnecessary complexity and embellishment.": {'batch_loss': 27.24609375, 'querys': {'Zoo with elephants': ('Refined Prompt: Step into a technologically advanced zoo of the future, where lifelike robotic elephants roam amidst futuristic architecture. Visitors marvel at the intricately designed cybernetic pachyderms, interacting with them through augmented reality displays and learning about conservation efforts. This innovative scene blends nature with cutting-edge technology, offering a glimpse into a world where artificial intelligence and environmental awareness converge to redefine the zoo experience.', 27.24609375)}}, 'Craft concise prompts that effectively convey the core aspects of various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize essential details to characterize the scene or subject, maintaining focus and impact while avoiding unnecessary complexity and embellishment.': {'batch_loss': 27.05078125, 'querys': {'Zoo with elephants': ("Refined Prompt: Within the zoo's spacious habitat, peaceful elephants gracefully navigate their surroundings, their stoic presence captivating visitors. Onlookers observe in awe as the intelligent creatures engage in social interactions and showcase their impressive tusks. This scene captures the natural beauty and serene majesty of elephants, fostering a sense of harmony between humans and wildlife in a tranquil setting.", 27.05078125)}}}
+Iteration 4/10 --- Average loss in the instruction where source is 'generated': 27.229817708333332
+highest_score_instruction:Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment., score27.392578125
+dict_items([('Zoo with elephants', ("Refined Prompt: Within the zoo's spacious habitat, peaceful elephants gracefully navigate their surroundings, their stoic presence captivating visitors. Onlookers observe in awe as the intelligent creatures engage in social interactions and showcase their impressive tusks. This scene captures the natural beauty and serene majesty of elephants, fostering a sense of harmony between humans and wildlife in a tranquil setting.", 27.05078125))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that effectively convey the core aspects of various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize essential details to characterize the scene or subject, maintaining focus and impact while avoiding unnecessary complexity and embellishment.
+ and first corresponding generated low score prompts group:
+low_score_object0:Zoo with elephants, low_score_generated_prompt:Refined Prompt: Within the zoo's spacious habitat, peaceful elephants gracefully navigate their surroundings, their stoic presence captivating visitors. Onlookers observe in awe as the intelligent creatures engage in social interactions and showcase their impressive tusks. This scene captures the natural beauty and serene majesty of elephants, fostering a sense of harmony between humans and wildlife in a tranquil setting., score:27.05078125
+below is high score prompts group:
+high_score_object0:Zoo with elephants, high_score_prompt:Refined Prompt: At the zoo, a serene enclosure houses magnificent elephants, their imposing yet gentle presence captivating visitors. People watch in admiration as these intelligent creatures interact with each other and with their environment. This scene evokes a sense of wonder and appreciation for the beauty of nature and wildlife in a peaceful setting.,score:27.392578125
+completed
+analyze_and_propose: Summary of Reasons for Scores:Low Score Prompts:
+1. Prompt: Refined Prompt: Within the zoo's spacious habitat, peaceful elephants gracefully navigate their surroundings, their stoic presence captivating visitors. Onlookers observe in awe as the intelligent creatures engage in social interactions and showcase their impressive tusks. This scene captures the natural beauty and serene majesty of elephants, fostering a sense of harmony between humans and wildlife in a tranquil setting.
+   Score: 27.05078125
+
+High Score Prompt:
+1. Prompt: Refined Prompt: At the zoo, a serene enclosure houses magnificent elephants, their imposing yet gentle presence captivating visitors. People watch in admiration as these intelligent creatures interact with each other and with their environment. This scene evokes a sense of wonder and appreciation for the beauty of nature and wildlife in a peaceful setting.
+   Score: 27.392578125
+
+Inference 1: The low score prompts continue to include additional details and elaborations that go beyond the concise and focused approach instructed. The prompts consist of intricate descriptions that may distract from the main elements of the scene, potentially reducing the clarity and impact of the response.
+
+Improvement 1: Emphasize the importance of precision and conciseness in generating prompts to effectively convey the core aspects of the scene or subject. Encourage the prompts to prioritize essential details that define the zoo with elephants, maintaining a clear and focused narrative while excluding excessive elaborations. Providing guidelines on staying succinct and to the point can help improve the quality and relevance of the generated prompts.
+
+Inference 2: The low score prompts lack a distinct and specific angle in presenting the scene of the zoo with elephants. While they aim to describe the setting and behavior of the elephants, the prompts may lack a unique perspective or feature that makes them stand out or evoke a particular emotion, resulting in a less engaging prompt.
+
+Improvement 2: Encourage the prompts to adopt a unique angle or approach that adds depth and originality to the description of the scene. Prompt the generation of prompts that evoke specific emotions or highlight unusual characteristics of the zoo with elephants, making the prompts more memorable and engaging. Encouraging creativity and innovation in crafting prompts can enhance their appeal and effectiveness.
+
+Inference 3: The low score prompts may include too much emphasis on human emotions and experiences rather than focusing on the essential aspects of the scene itself, which could lead to a dilution of the core elements. By placing excessive importance on visitors' reactions or feelings, the prompts may lose sight of the primary objective of capturing the essence of the zoo with elephants.
+
+Improvement 3: Shift the focus of the prompts towards highlighting the key elements that define the scene or subject, such as the elephants themselves and the zoo environment. Encourage prompts to center on portraying the characteristics and behaviors of the elephants and the ambiance of the zoo, rather than overly emphasizing human interactions. By ensuring that the prompts primarily convey the essence of the scene itself, the generated responses can become more immersive and evocative.
+analyze_and_propose: improvement: Emphasize the importance of precision and conciseness in generating prompts to effectively convey the core aspects of the scene or subject. Encourage the prompts to prioritize essential details that define the zoo with elephants, maintaining a clear and focused narrative while excluding excessive elaborations. Providing guidelines on staying succinct and to the point can help improve the quality and relevance of the generated prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts.
+analyze_and_propose: improvement: Encourage the prompts to adopt a unique angle or approach that adds depth and originality to the description of the scene. Prompt the generation of prompts that evoke specific emotions or highlight unusual characteristics of the zoo with elephants, making the prompts more memorable and engaging. Encouraging creativity and innovation in crafting prompts can enhance their appeal and effectiveness.
+completed
+analyze_and_propose: Updated Instruction: Generate prompts with a unique angle or perspective that evoke specific emotions or highlight unusual characteristics of various scenes or subjects, making them memorable and engaging. Encourage creativity and innovation in crafting prompts to enhance their appeal and effectiveness while ensuring clarity and coherence in the responses.
+analyze_and_propose: improvement: Shift the focus of the prompts towards highlighting the key elements that define the scene or subject, such as the elephants themselves and the zoo environment. Encourage prompts to center on portraying the characteristics and behaviors of the elephants and the ambiance of the zoo, rather than overly emphasizing human interactions. By ensuring that the prompts primarily convey the essence of the scene itself, the generated responses can become more immersive and evocative.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that focus on key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the characteristics and behaviors of the main subject, such as elephants in the zoo environment, to create immersive and evocative descriptions. Avoid unnecessary complexity and embellishment, maintaining a clear and impactful narrative.
+
+Iteration 5/10
+completed
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.6845703125
+ loss: 26.6845703125
+100% 50/50 [00:11<00:00,  4.19it/s]
+score:26.5869140625
+ loss: 26.5869140625
+100% 50/50 [00:11<00:00,  4.18it/s]
+score:26.806640625
+ loss: 26.806640625
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:27.001953125
+ loss: 27.001953125
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:27.5634765625
+ loss: 27.5634765625
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:25.244140625
+ loss: 25.244140625
+26.6845703125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['worldly, blurring the boundaries between myth and reality.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['worldly, blurring the boundaries between myth and reality.']
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:25.68359375
+ loss: 25.68359375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:27.3193359375
+ loss: 27.3193359375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:23.25439453125
+ loss: 23.25439453125
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:26.4892578125
+ loss: 26.4892578125
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.9267578125
+ loss: 24.9267578125
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:26.1962890625
+ loss: 26.1962890625
+25.68359375
+completed
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:26.7333984375
+ loss: 26.7333984375
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:26.5869140625
+ loss: 26.5869140625
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:24.86572265625
+ loss: 24.86572265625
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:25.7568359375
+ loss: 25.7568359375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:28.02734375
+ loss: 28.02734375
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.5625
+ loss: 26.5625
+26.7333984375
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['time, beckoning them to unravel its enigmatic history.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['time, beckoning them to unravel its enigmatic history.']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.07421875
+ loss: 26.07421875
+100% 50/50 [00:11<00:00,  4.32it/s]
+score:27.9296875
+ loss: 27.9296875
+100% 50/50 [00:11<00:00,  4.32it/s]
+score:27.5146484375
+ loss: 27.5146484375
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:28.076171875
+ loss: 28.076171875
+100% 50/50 [00:11<00:00,  4.40it/s]
+score:27.7099609375
+ loss: 27.7099609375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.3427734375
+ loss: 26.3427734375
+26.07421875
+completed
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.0263671875
+ loss: 27.0263671875
+100% 50/50 [00:11<00:00,  4.32it/s]
+score:26.3427734375
+ loss: 26.3427734375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['k, focused, extreme details, super resolution, cinematic, masterpiece']
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:25.1708984375
+ loss: 25.1708984375
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:26.3916015625
+ loss: 26.3916015625
+100% 50/50 [00:11<00:00,  4.40it/s]
+score:26.7578125
+ loss: 26.7578125
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.806640625
+ loss: 26.806640625
+27.0263671875
+top_instr:{'Craft concise prompts that focus on key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the characteristics and behaviors of the main subject, such as elephants in the zoo environment, to create immersive and evocative descriptions. Avoid unnecessary complexity and embellishment, maintaining a clear and impactful narrative.': {'batch_loss': 27.0263671875, 'querys': {'An ancient temple': ('Refined Prompt: Step into the solemn quiet of an ancient temple, where weathered stones bear witness to centuries of devotion. Shafts of light filter through intricate carvings, casting a sacred glow on the hallowed grounds. Visitors sense the weight of history and spirituality in the air, enveloped by a timeless reverence that transcends the passage of time.', 27.0263671875)}}, 'Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts.': {'batch_loss': 26.7333984375, 'querys': {'An ancient temple': ('Refined Prompt: Discover the mystique of an ancient temple, where weathered stone walls stand as serene sentinels to bygone eras. Sunlight filters through the ornate carvings, casting intricate patterns on the sacred grounds. Visitors absorb the palpable aura of history and spirituality, feeling a deep connection to the echoes of the past within the hallowed sanctuary.', 26.7333984375)}}, 'Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment.': {'batch_loss': 26.6845703125, 'querys': {'An ancient temple': ('Refined Prompt: Explore the grandeur of an ancient temple, its weathered stone walls adorned with intricate carvings and mysterious symbols. Shaft of sunlight pierce through the aged cracks, illuminating the sacred altar at the heart of the sanctuary. Visitors can almost sense the echoes of centuries past, feeling a profound sense of reverence and awe in the presence of this timeless architectural marvel.', 26.6845703125)}}}
+Iteration 5/10 --- Average loss in the instruction where source is 'generated': 26.814778645833332
+highest_score_instruction:Craft concise prompts that focus on key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the characteristics and behaviors of the main subject, such as elephants in the zoo environment, to create immersive and evocative descriptions. Avoid unnecessary complexity and embellishment, maintaining a clear and impactful narrative., score27.0263671875
+dict_items([('An ancient temple', ('Refined Prompt: Explore the grandeur of an ancient temple, its weathered stone walls adorned with intricate carvings and mysterious symbols. Shaft of sunlight pierce through the aged cracks, illuminating the sacred altar at the heart of the sanctuary. Visitors can almost sense the echoes of centuries past, feeling a profound sense of reverence and awe in the presence of this timeless architectural marvel.', 26.6845703125))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment.
+ and first corresponding generated low score prompts group:
+low_score_object0:An ancient temple, low_score_generated_prompt:Refined Prompt: Explore the grandeur of an ancient temple, its weathered stone walls adorned with intricate carvings and mysterious symbols. Shaft of sunlight pierce through the aged cracks, illuminating the sacred altar at the heart of the sanctuary. Visitors can almost sense the echoes of centuries past, feeling a profound sense of reverence and awe in the presence of this timeless architectural marvel., score:26.6845703125
+below is high score prompts group:
+high_score_object0:An ancient temple, high_score_prompt:Mayan stone tomb, digital painting, artstation, cg art, elegant, highly detailed, sharp focus, virtual painted, cups with fire, high contrast, aztec mask, column, jungle, stone tomb, stone statues, vines, warm colors, on a hill, background, night, anime drawing,score:28.076171875
+completed
+analyze_and_propose: Summary of Reasons for Scores:Low Score Prompts:
+1. Prompt: Refined Prompt: Explore the grandeur of an ancient temple, its weathered stone walls adorned with intricate carvings and mysterious symbols. Shaft of sunlight pierce through the aged cracks, illuminating the sacred altar at the heart of the sanctuary. Visitors can almost sense the echoes of centuries past, feeling a profound sense of reverence and awe in the presence of this timeless architectural marvel.
+   Score: 26.6845703125
+
+High Score Prompt:
+1. Prompt: Mayan stone tomb, digital painting, artstation, cg art, elegant, highly detailed, sharp focus, virtual painted, cups with fire, high contrast, aztec mask, column, jungle, stone tomb, stone statues, vines, warm colors, on a hill, background, night, anime drawing
+   Score: 28.076171875
+
+Inference 1: The low score prompts still exhibit a level of detail and elaboration that exceeds the concise approach instructed. The prompts delve into vivid and atmospheric descriptions, focusing on creating a rich sensory experience rather than conveying the essence of the ancient temple through essential details, potentially leading to a lack of clarity and focus.
+
+Improvement 1: Reinforce the guidance on crafting concise prompts that capture the core essence of the scene or subject. Encourage the prompts to prioritize essential details that define the ancient temple while maintaining brevity and clarity. Providing examples of prompts that effectively convey the essence without unnecessary embellishments can help guide the generation of more focused responses.
+
+Inference 2: The low score prompts lack a clear structure or focus on essential elements of the ancient temple. While they aim to create a vivid and immersive description, they may overlook key features that characterize the temple, leading to a less coherent prompt that may appear disjointed or unfocused.
+
+Improvement 2: Provide guidance on structuring prompts to ensure a coherent and focused narrative that highlights the essential elements of the scene or subject. Encourage the prompts to identify and emphasize key characteristics of the ancient temple, such as its architecture, symbolism, or historical significance, to create a more cohesive and impactful prompt. By maintaining a clear focus on essential details, the prompts can effectively convey the essence of the scene while enhancing clarity and coherence in the responses.
+analyze_and_propose: improvement: Reinforce the guidance on crafting concise prompts that capture the core essence of the scene or subject. Encourage the prompts to prioritize essential details that define the ancient temple while maintaining brevity and clarity. Providing examples of prompts that effectively convey the essence without unnecessary embellishments can help guide the generation of more focused responses.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative.
+analyze_and_propose: improvement: Provide guidance on structuring prompts to ensure a coherent and focused narrative that highlights the essential elements of the scene or subject. Encourage the prompts to identify and emphasize key characteristics of the ancient temple, such as its architecture, symbolism, or historical significance, to create a more cohesive and impactful prompt. By maintaining a clear focus on essential details, the prompts can effectively convey the essence of the scene while enhancing clarity and coherence in the responses.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment. By structuring prompts to highlight key characteristics of the scene or subject, such as architecture, symbolism, or historical significance, a more cohesive and impactful narrative can be created.
+
+Iteration 6/10
+completed
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:26.611328125
+ loss: 26.611328125
+100% 50/50 [00:11<00:00,  4.21it/s]
+score:24.84130859375
+ loss: 24.84130859375
+100% 50/50 [00:11<00:00,  4.18it/s]
+score:25.8056640625
+ loss: 25.8056640625
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:24.81689453125
+ loss: 24.81689453125
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:25.1220703125
+ loss: 25.1220703125
+100% 50/50 [00:11<00:00,  4.49it/s]
+score:26.4404296875
+ loss: 26.4404296875
+26.611328125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['on the sandy shores.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['on the sandy shores.']
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:26.953125
+ loss: 26.953125
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:25.0244140625
+ loss: 25.0244140625
+100% 50/50 [00:11<00:00,  4.25it/s]
+score:25.9521484375
+ loss: 25.9521484375
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:23.6572265625
+ loss: 23.6572265625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.08447265625
+ loss: 24.08447265625
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:24.0966796875
+ loss: 24.0966796875
+26.953125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['the beauty and resilience of wildlife in their natural habitat.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['the beauty and resilience of wildlife in their natural habitat.']
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:27.099609375
+ loss: 27.099609375
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:25.09765625
+ loss: 25.09765625
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:24.462890625
+ loss: 24.462890625
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:24.35302734375
+ loss: 24.35302734375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['clean, and the only sound is the gentle lapping of the waves against person dressed in comfortable, they are sitting in various positions of meditation, with their eyes closed and their faces serene. there is a sense of peace and harmony in the air. the lush greenery and crystal - clear water add to the sense of tranquility.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['clean, and the only sound is the gentle lapping of the waves against person dressed in comfortable, they are sitting in various positions of meditation, with their eyes closed and their faces serene. there is a sense of peace and harmony in the air. the lush greenery and crystal - clear water add to the sense of tranquility.']
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:22.705078125
+ loss: 22.705078125
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.5625
+ loss: 26.5625
+27.099609375
+completed
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:25.9521484375
+ loss: 25.9521484375
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:25.4150390625
+ loss: 25.4150390625
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:25.927734375
+ loss: 25.927734375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['clean, and the only sound is the gentle lapping of the waves against person dressed in comfortable, they are sitting in various positions of meditation, with their eyes closed and their faces serene. there is a sense of peace and harmony in the air. the lush greenery and crystal - clear water add to the sense of tranquility.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['clean, and the only sound is the gentle lapping of the waves against person dressed in comfortable, they are sitting in various positions of meditation, with their eyes closed and their faces serene. there is a sense of peace and harmony in the air. the lush greenery and crystal - clear water add to the sense of tranquility.']
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:23.6572265625
+ loss: 23.6572265625
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:25.390625
+ loss: 25.390625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.40185546875
+ loss: 24.40185546875
+25.9521484375
+top_instr:{'Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative.': {'batch_loss': 27.099609375, 'querys': {'Beach with turtles nesting': ("Refined Prompt: At the beach, under the soft glow of the moon, turtles meticulously nest in the sandy shores, a timeless ritual unfolding in harmony with the gentle waves. Visitors witness this sacred moment, feeling a deep connection to nature's cycle of renewal and life. This scene exudes a sense of tranquility and wonder, inviting observers to pause and reflect on the beauty and resilience of wildlife in their natural habitat.", 27.099609375)}}, 'Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts.': {'batch_loss': 26.953125, 'querys': {'Beach with turtles nesting': ('Refined Prompt: On a tranquil beach, the rhythmic sound of waves accompanies nesting turtles as they diligently burrow into the warm sand. Under the moonlit sky, the turtles tenderly lay their eggs, embracing the cycle of life within the peaceful coastal haven. Observers are spellbound by this intimate spectacle of nature, witnessing a timeless ritual of survival and new beginnings unfolding on the sandy shores.', 26.953125)}}, 'Craft concise prompts that focus on key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the characteristics and behaviors of the main subject, such as elephants in the zoo environment, to create immersive and evocative descriptions. Avoid unnecessary complexity and embellishment, maintaining a clear and impactful narrative.': {'batch_loss': 26.611328125, 'querys': {'Beach with turtles nesting': ('Refined Prompt: Experience the serenity of a beach where gentle waves lap against the shore, providing a peaceful backdrop for nesting turtles. Under the soft moonlight, the turtles carefully dig their nests in the sand, preparing to lay their precious eggs. Visitors observe in hushed awe, witnessing this poignant cycle of life and nature unfold in a harmonious coastal sanctuary.', 26.611328125)}}}
+Iteration 6/10 --- Average loss in the instruction where source is 'generated': 26.888020833333332
+highest_score_instruction:Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative., score27.099609375
+dict_items([('Beach with turtles nesting', ('Refined Prompt: Experience the serenity of a beach where gentle waves lap against the shore, providing a peaceful backdrop for nesting turtles. Under the soft moonlight, the turtles carefully dig their nests in the sand, preparing to lay their precious eggs. Visitors observe in hushed awe, witnessing this poignant cycle of life and nature unfold in a harmonious coastal sanctuary.', 26.611328125))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that focus on key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the characteristics and behaviors of the main subject, such as elephants in the zoo environment, to create immersive and evocative descriptions. Avoid unnecessary complexity and embellishment, maintaining a clear and impactful narrative.
+ and first corresponding generated low score prompts group:
+low_score_object0:Beach with turtles nesting, low_score_generated_prompt:Refined Prompt: Experience the serenity of a beach where gentle waves lap against the shore, providing a peaceful backdrop for nesting turtles. Under the soft moonlight, the turtles carefully dig their nests in the sand, preparing to lay their precious eggs. Visitors observe in hushed awe, witnessing this poignant cycle of life and nature unfold in a harmonious coastal sanctuary., score:26.611328125
+below is high score prompts group:
+high_score_object0:Beach with turtles nesting, high_score_prompt:Refined Prompt: At the beach, under the soft glow of the moon, turtles meticulously nest in the sandy shores, a timeless ritual unfolding in harmony with the gentle waves. Visitors witness this sacred moment, feeling a deep connection to nature's cycle of renewal and life. This scene exudes a sense of tranquility and wonder, inviting observers to pause and reflect on the beauty and resilience of wildlife in their natural habitat.,score:27.099609375
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts provided still showcase a level of detail and imagery that surpasses the concise and focused nature instructed. While they aim to create immersive descriptions of the scene, the prompts might get overly descriptive, losing sight of the main elements defining the beach with turtles nesting. This could lead to a lack of clarity and a diluted focus in the response.
+
+Improvement 1: Emphasize the importance of crafting concise prompts that revolve around the key elements of the scene or subject. Encourage the prompts to prioritize portraying the essential characteristics and actions of the main subject - in this case, turtles nesting on the beach - while maintaining brevity and a clear narrative. Providing examples or guidelines on how to convey the essence of the scene concisely can assist in generating more impactful responses.
+
+Inference 2: The low score prompts lack a specific focus on the main subject, turtles nesting on the beach, instead opting for broader descriptions of the beach environment and setting. The prompts may stray away from emphasizing the key elements that define the scene, resulting in a prompt that might not effectively convey the immersive nature of the beach with turtles nesting.
+
+Improvement 2: Encourage prompts to center the narrative on the main subject itself - in this case, the turtles nesting on the beach - by highlighting their behaviors, characteristics, and interactions in a concise and focused manner. Prompt the generation of responses that are centered around the unique features of the subject, ensuring that the prompts effectively capture the essence of the scene while maintaining clarity and coherence. By honing in on the defining elements of the main subject, the prompts can become more evocative and engaging.
+analyze_and_propose: improvement: Emphasize the importance of crafting concise prompts that revolve around the key elements of the scene or subject. Encourage the prompts to prioritize portraying the essential characteristics and actions of the main subject - in this case, turtles nesting on the beach - while maintaining brevity and a clear narrative. Providing examples or guidelines on how to convey the essence of the scene concisely can assist in generating more impactful responses.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that center on the key elements of various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize portraying the essential characteristics and actions of the main subject, like turtles nesting on the beach, while maintaining brevity and a clear narrative. Avoid unnecessary complexity and embellishment, focusing on creating impactful and descriptive prompts.
+analyze_and_propose: improvement: Encourage prompts to center the narrative on the main subject itself - in this case, the turtles nesting on the beach - by highlighting their behaviors, characteristics, and interactions in a concise and focused manner. Prompt the generation of responses that are centered around the unique features of the subject, ensuring that the prompts effectively capture the essence of the scene while maintaining clarity and coherence. By honing in on the defining elements of the main subject, the prompts can become more evocative and engaging.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative.
+
+Iteration 7/10
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['domain.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['domain.']
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:26.4404296875
+ loss: 26.4404296875
+100% 50/50 [00:11<00:00,  4.20it/s]
+score:27.001953125
+ loss: 27.001953125
+100% 50/50 [00:12<00:00,  4.16it/s]
+score:26.0498046875
+ loss: 26.0498046875
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:24.86572265625
+ loss: 24.86572265625
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:27.1484375
+ loss: 27.1484375
+100% 50/50 [00:11<00:00,  4.48it/s]
+score:26.6845703125
+ loss: 26.6845703125
+26.4404296875
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['and stealth coexist in a hauntingly beautiful ecosystem.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['and stealth coexist in a hauntingly beautiful ecosystem.']
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:26.5380859375
+ loss: 26.5380859375
+100% 50/50 [00:11<00:00,  4.29it/s]
+score:26.708984375
+ loss: 26.708984375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:27.3193359375
+ loss: 27.3193359375
+100% 50/50 [00:11<00:00,  4.35it/s]
+score:25.48828125
+ loss: 25.48828125
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.0263671875
+ loss: 27.0263671875
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:24.8291015625
+ loss: 24.8291015625
+26.5380859375
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['ecosystem.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['ecosystem.']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.220703125
+ loss: 26.220703125
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:26.0009765625
+ loss: 26.0009765625
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:27.1240234375
+ loss: 27.1240234375
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:27.587890625
+ loss: 27.587890625
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', and alice in wonderland background with snow mountains, and trees with pink leaves.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', and alice in wonderland background with snow mountains, and trees with pink leaves.']
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:24.84130859375
+ loss: 24.84130859375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:23.046875
+ loss: 23.046875
+26.220703125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['tamed beauty of the wilderness.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['tamed beauty of the wilderness.']
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:26.7578125
+ loss: 26.7578125
+100% 50/50 [00:11<00:00,  4.33it/s]
+score:24.755859375
+ loss: 24.755859375
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', and alice in wonderland background with snow mountains, and trees with pink leaves.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', and alice in wonderland background with snow mountains, and trees with pink leaves.']
+100% 50/50 [00:11<00:00,  4.32it/s]
+score:25.390625
+ loss: 25.390625
+100% 50/50 [00:11<00:00,  4.35it/s]
+score:26.1474609375
+ loss: 26.1474609375
+100% 50/50 [00:11<00:00,  4.39it/s]
+score:24.7314453125
+ loss: 24.7314453125
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.734375
+ loss: 27.734375
+26.7578125
+top_instr:{'Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative.': {'batch_loss': 26.7578125, 'querys': {'Swamp with crocodiles': ('Refined Prompt: Within the murky depths of the swamp, stealthy crocodiles glide silently, their powerful presence contrasting with the stillness of the water. The tangled vegetation adds to the sense of mystery and danger in this primal habitat. Observers feel a mix of fascination and fear as they witness the ancient predators in their natural element, embodying a glimpse into the untamed beauty of the wilderness.', 26.7578125)}}, 'Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts.': {'batch_loss': 26.5380859375, 'querys': {'Swamp with crocodiles': ('Refined Prompt: Amidst the murky waters of the swamp, silent and formidable crocodiles glide with stealth, their primal presence accentuated by the thick, tangled vegetation. The air is heavy with anticipation as observers witness the apex predators in their natural habitat, embodying a blend of danger and ancient mystery. This scene captures the essence of the untamed wilderness, where survival and stealth coexist in a hauntingly beautiful ecosystem.', 26.5380859375)}}, 'Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative.': {'batch_loss': 26.4404296875, 'querys': {'Swamp with crocodiles': ('Refined Prompt: In the murky swamp waters, stealthy crocodiles lurk, their eyes gleaming with primal instinct. The dense foliage and eerie silence create an ominous atmosphere, hinting at the untamed wildness of the habitat. Observers feel a mix of fascination and trepidation, witnessing the raw power and ancient allure of these formidable reptiles in their natural domain.', 26.4404296875)}}}
+Iteration 7/10 --- Average loss in the instruction where source is 'generated': 26.578776041666668
+highest_score_instruction:Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative., score26.7578125
+dict_items([('Swamp with crocodiles', ('Refined Prompt: In the murky swamp waters, stealthy crocodiles lurk, their eyes gleaming with primal instinct. The dense foliage and eerie silence create an ominous atmosphere, hinting at the untamed wildness of the habitat. Observers feel a mix of fascination and trepidation, witnessing the raw power and ancient allure of these formidable reptiles in their natural domain.', 26.4404296875))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative.
+ and first corresponding generated low score prompts group:
+low_score_object0:Swamp with crocodiles, low_score_generated_prompt:Refined Prompt: In the murky swamp waters, stealthy crocodiles lurk, their eyes gleaming with primal instinct. The dense foliage and eerie silence create an ominous atmosphere, hinting at the untamed wildness of the habitat. Observers feel a mix of fascination and trepidation, witnessing the raw power and ancient allure of these formidable reptiles in their natural domain., score:26.4404296875
+below is high score prompts group:
+high_score_object0:Swamp with crocodiles, high_score_prompt:Gators heading back to school, realism, doodle,score:27.734375
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts continue to exhibit a level of detail and elaboration that exceeds the instruction for concise prompts. The prompts delve into vivid descriptions and atmospheric elements surrounding the swamp with crocodiles, focusing more on creating an immersive narrative rather than conveying the essential details. This could lead to a lack of clarity and a verbose response that dilutes the main focus.
+
+Improvement 1: Reinforce the importance of crafting concise prompts that capture the essence of the scene or subject through essential details. Encourage the prompts to prioritize key elements that define the swamp with crocodiles in a clear and focused manner while minimizing unnecessary embellishments. Providing specific examples or guidelines on how to convey the core aspects concisely can help improve the quality and relevance of the generated prompts.
+
+Inference 2: The low score prompts may lack a direct focus on the main subject of the scene, crocodiles in the swamp. While they aim to set the scene and atmosphere, the prompts may fail to highlight the characteristics and behaviors of the crocodiles themselves, leading to a less engaging and specific description of the subject.
+
+Improvement 2: Encourage prompts to center their narrative on the main subject - in this case, the crocodiles in the swamp - by emphasizing their unique features, movements, and presence in a concise and impactful manner. Prompt the generation of responses that capture the essence of the crocodiles' nature and their interaction with the swamp environment, ensuring that the prompts effectively convey the main focus while maintaining clarity and coherence. By honing in on the defining elements of the subject, the prompts can become more immersive and evocative.
+analyze_and_propose: improvement: Reinforce the importance of crafting concise prompts that capture the essence of the scene or subject through essential details. Encourage the prompts to prioritize key elements that define the swamp with crocodiles in a clear and focused manner while minimizing unnecessary embellishments. Providing specific examples or guidelines on how to convey the core aspects concisely can help improve the quality and relevance of the generated prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Prioritize key elements that define the scene or subject, such as the swamp with crocodiles, in a clear and focused manner to create engaging and evocative descriptions.
+analyze_and_propose: improvement: Encourage prompts to center their narrative on the main subject - in this case, the crocodiles in the swamp - by emphasizing their unique features, movements, and presence in a concise and impactful manner. Prompt the generation of responses that capture the essence of the crocodiles' nature and their interaction with the swamp environment, ensuring that the prompts effectively convey the main focus while maintaining clarity and coherence. By honing in on the defining elements of the subject, the prompts can become more immersive and evocative.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses. Highlight the unique features, movements, and presence of the main subject, such as crocodiles in the swamp, in a concise and impactful manner to capture their nature and interaction with the environment. Avoid unnecessary complexity and embellishment to maintain a clear and immersive narrative.
+
+Iteration 8/10
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['.']
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:27.5146484375
+ loss: 27.5146484375
+100% 50/50 [00:11<00:00,  4.22it/s]
+score:27.7099609375
+ loss: 27.7099609375
+100% 50/50 [00:12<00:00,  4.15it/s]
+score:26.4892578125
+ loss: 26.4892578125
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['unreal engine 5, ultra sharp focus, intricate artwork masterpiece, ominous, golden ratio, highly detailed, vibrant, production cinematic character render, ultra high quality model']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['unreal engine 5, ultra sharp focus, intricate artwork masterpiece, ominous, golden ratio, highly detailed, vibrant, production cinematic character render, ultra high quality model']
+100% 50/50 [00:11<00:00,  4.33it/s]
+score:27.6123046875
+ loss: 27.6123046875
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:26.3427734375
+ loss: 26.3427734375
+100% 50/50 [00:11<00:00,  4.49it/s]
+score:24.0478515625
+ loss: 24.0478515625
+27.5146484375
+completed
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:28.0029296875
+ loss: 28.0029296875
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:27.099609375
+ loss: 27.099609375
+100% 50/50 [00:11<00:00,  4.26it/s]
+score:27.6611328125
+ loss: 27.6611328125
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:24.01123046875
+ loss: 24.01123046875
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:27.5146484375
+ loss: 27.5146484375
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:27.4169921875
+ loss: 27.4169921875
+28.0029296875
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['in the verdant wilderness.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['in the verdant wilderness.']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.2705078125
+ loss: 27.2705078125
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:27.3681640625
+ loss: 27.3681640625
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:27.3193359375
+ loss: 27.3193359375
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:26.318359375
+ loss: 26.318359375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.0234375
+ loss: 24.0234375
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:27.5146484375
+ loss: 27.5146484375
+27.2705078125
+completed
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:27.1728515625
+ loss: 27.1728515625
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['unreal engine 5, ultra sharp focus, intricate artwork masterpiece, ominous, golden ratio, highly detailed, vibrant, production cinematic character render, ultra high quality model']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['unreal engine 5, ultra sharp focus, intricate artwork masterpiece, ominous, golden ratio, highly detailed, vibrant, production cinematic character render, ultra high quality model']
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:27.34375
+ loss: 27.34375
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:26.1474609375
+ loss: 26.1474609375
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:27.7587890625
+ loss: 27.7587890625
+100% 50/50 [00:11<00:00,  4.40it/s]
+score:24.15771484375
+ loss: 24.15771484375
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:27.7587890625
+ loss: 27.7587890625
+27.1728515625
+top_instr:{'Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts.': {'batch_loss': 28.0029296875, 'querys': {'A tiger': ('Refined Prompt: In the heart of the forest, a majestic tiger commands attention with its sleek fur and piercing gaze. Every movement exudes strength and agility, as it navigates its terrain with silent grace. Observers are captivated by the raw power and beauty of this apex predator, embodying the untamed spirit of the wild in a moment frozen in time.', 28.0029296875)}}, 'Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative.': {'batch_loss': 27.5146484375, 'querys': {'A tiger': ("Refined Prompt: A majestic tiger prowls through its lush jungle habitat, its powerful muscles rippling beneath its striped coat. With eyes keen and focused, the tiger moves with effortless grace and stealth, embodying the essence of wild beauty and predatory prowess. Observers witness nature's awe-inspiring creation, feeling a blend of admiration and respect for this magnificent and elusive carnivore.", 27.5146484375)}}, 'Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Prioritize key elements that define the scene or subject, such as the swamp with crocodiles, in a clear and focused manner to create engaging and evocative descriptions.': {'batch_loss': 27.2705078125, 'querys': {'A tiger': ("Refined Prompt: Roaming through the jungle, a tiger moves with quiet strength, its majestic stripes blending into the dappled sunlight. The intense gaze and sinewy build reveal a creature perfectly adapted for the hunt, embodying both grace and ferocity in its natural environment. Observers are mesmerized by the tiger's beauty and power, witnessing a primeval force of nature at play in the verdant wilderness.", 27.2705078125)}}}
+Iteration 8/10 --- Average loss in the instruction where source is 'generated': 27.596028645833332
+highest_score_instruction:Craft precise and concise prompts that effectively convey the essential aspects of diverse scenes or subjects, ensuring clarity and coherence in the responses. Emphasize essential details to define the scene or subject, maintaining a focused narrative while avoiding unnecessary complexity and embellishment to enhance the quality and relevance of the prompts., score28.0029296875
+dict_items([('A tiger', ("Refined Prompt: Roaming through the jungle, a tiger moves with quiet strength, its majestic stripes blending into the dappled sunlight. The intense gaze and sinewy build reveal a creature perfectly adapted for the hunt, embodying both grace and ferocity in its natural environment. Observers are mesmerized by the tiger's beauty and power, witnessing a primeval force of nature at play in the verdant wilderness.", 27.2705078125))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that effectively convey the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Prioritize key elements that define the scene or subject, such as the swamp with crocodiles, in a clear and focused manner to create engaging and evocative descriptions.
+ and first corresponding generated low score prompts group:
+low_score_object0:A tiger, low_score_generated_prompt:Refined Prompt: Roaming through the jungle, a tiger moves with quiet strength, its majestic stripes blending into the dappled sunlight. The intense gaze and sinewy build reveal a creature perfectly adapted for the hunt, embodying both grace and ferocity in its natural environment. Observers are mesmerized by the tiger's beauty and power, witnessing a primeval force of nature at play in the verdant wilderness., score:27.2705078125
+below is high score prompts group:
+high_score_object0:A tiger, high_score_prompt:Refined Prompt: In the heart of the forest, a majestic tiger commands attention with its sleek fur and piercing gaze. Every movement exudes strength and agility, as it navigates its terrain with silent grace. Observers are captivated by the raw power and beauty of this apex predator, embodying the untamed spirit of the wild in a moment frozen in time.,score:28.0029296875
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts show a tendency to include an abundance of descriptive elements and imagery that exceed the concise approach instructed. While the prompts aim to create vivid descriptions of the tiger in its jungle habitat, they may lean towards excess details which could obscure the main elements defining the scene. This can result in a lack of clarity and a narrative that might feel overstuffed with descriptions.
+
+Improvement 1: Emphasize the need for crafting succinct prompts that succinctly capture the essence of the scene or subject without unnecessary elaboration. Encourage the prompts to concentrate on the essential details that define the tiger in the jungle using a clear and focused narrative. Providing examples of prompts that effectively convey the core aspects while maintaining brevity can guide the creation of responses that are impactful and coherent.
+
+Inference 2: The low score prompts might lack a specific focus on the key elements that define the tiger, such as its behaviors, characteristics, or unique features. While the descriptions are immersive, they may overlook highlighting the traits that truly distinguish the tiger in its natural environment, resulting in a less engaging and evocative prompt.
+
+Improvement 2: Prompt the generation of prompts that centralize on portraying the defining characteristics and behaviors of the main subject - in this case, the tiger - in a clear and compelling manner. Encourage the prompts to emphasize the uniqueness and attributes of the tiger that set it apart in the jungle setting, ensuring that the responses effectively capture the essence of the scene while maintaining coherence and impact. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive.
+analyze_and_propose: improvement: Emphasize the need for crafting succinct prompts that succinctly capture the essence of the scene or subject without unnecessary elaboration. Encourage the prompts to concentrate on the essential details that define the tiger in the jungle using a clear and focused narrative. Providing examples of prompts that effectively convey the core aspects while maintaining brevity can guide the creation of responses that are impactful and coherent.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that succinctly capture the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Encourage prompts to concentrate on the key elements that define the main subject, like the tiger in the jungle, using a clear and focused narrative for impactful and coherent descriptions.
+analyze_and_propose: improvement: Prompt the generation of prompts that centralize on portraying the defining characteristics and behaviors of the main subject - in this case, the tiger - in a clear and compelling manner. Encourage the prompts to emphasize the uniqueness and attributes of the tiger that set it apart in the jungle setting, ensuring that the responses effectively capture the essence of the scene while maintaining coherence and impact. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that focus on portraying the defining characteristics and behaviors of the main subject, like the tiger, in a clear and compelling manner to effectively capture the essence of the scene. Encourage prompts to emphasize the unique attributes of the tiger in the jungle setting, ensuring coherence and impact in the responses. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive while avoiding unnecessary complexity and embellishment.
+
+Iteration 9/10
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['stone.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['stone.']
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:25.146484375
+ loss: 25.146484375
+100% 50/50 [00:11<00:00,  4.23it/s]
+score:24.35302734375
+ loss: 24.35302734375
+100% 50/50 [00:12<00:00,  4.14it/s]
+score:23.98681640625
+ loss: 23.98681640625
+100% 50/50 [00:11<00:00,  4.33it/s]
+score:24.89013671875
+ loss: 24.89013671875
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:24.90234375
+ loss: 24.90234375
+100% 50/50 [00:11<00:00,  4.49it/s]
+score:25.3173828125
+ loss: 25.3173828125
+25.146484375
+completed
+100% 50/50 [00:11<00:00,  4.47it/s]
+score:25.68359375
+ loss: 25.68359375
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:25.537109375
+ loss: 25.537109375
+100% 50/50 [00:11<00:00,  4.26it/s]
+score:25.9765625
+ loss: 25.9765625
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:24.59716796875
+ loss: 24.59716796875
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:24.08447265625
+ loss: 24.08447265625
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:24.658203125
+ loss: 24.658203125
+25.68359375
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['empire etched into the very foundations of this historic arena.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['empire etched into the very foundations of this historic arena.']
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:25.78125
+ loss: 25.78125
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:24.25537109375
+ loss: 24.25537109375
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:24.9755859375
+ loss: 24.9755859375
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:24.31640625
+ loss: 24.31640625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:26.0498046875
+ loss: 26.0498046875
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:25.0244140625
+ loss: 25.0244140625
+25.78125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ["and the pulse - pounding excitement of events that defined the spirit of rome's legendary amphitheater."]
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ["and the pulse - pounding excitement of events that defined the spirit of rome's legendary amphitheater."]
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:25.87890625
+ loss: 25.87890625
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:24.9267578125
+ loss: 24.9267578125
+100% 50/50 [00:11<00:00,  4.31it/s]
+score:24.3408203125
+ loss: 24.3408203125
+100% 50/50 [00:11<00:00,  4.39it/s]
+score:25.634765625
+ loss: 25.634765625
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:25.244140625
+ loss: 25.244140625
+100% 50/50 [00:11<00:00,  4.41it/s]
+score:25.244140625
+ loss: 25.244140625
+25.87890625
+top_instr:{'Craft concise prompts that focus on portraying the defining characteristics and behaviors of the main subject, like the tiger, in a clear and compelling manner to effectively capture the essence of the scene. Encourage prompts to emphasize the unique attributes of the tiger in the jungle setting, ensuring coherence and impact in the responses. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive while avoiding unnecessary complexity and embellishment.': {'batch_loss': 25.87890625, 'querys': {'A Roman coliseum': ("Refined Prompt: Immerse yourself in the awe-inspiring grandeur of the Roman Coliseum, an ancient architectural marvel that once thundered with the clash of gladiators. The weathered stone walls bear witness to dramatic battles and the cheers of spectators, enveloping visitors in the echoes of a bygone era. As you envision the arena's past glory, imagine the courage of combatants and the pulse-pounding excitement of events that defined the spirit of Rome's legendary amphitheater.", 25.87890625)}}, 'Craft concise prompts that succinctly capture the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Encourage prompts to concentrate on the key elements that define the main subject, like the tiger in the jungle, using a clear and focused narrative for impactful and coherent descriptions.': {'batch_loss': 25.78125, 'querys': {'A Roman coliseum': ('Refined Prompt: Step into the storied past within the Roman Coliseum, where ancient echoes whisper tales of gladiatorial combat and roaring crowds. The weathered stone structure stands as a symbol of grandeur and brutality, embodying a bygone era of entertainment and power. With each shadow cast by the arched openings, envision the raw energy of fierce battles and the legacy of an empire etched into the very foundations of this historic arena.', 25.78125)}}, 'Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative.': {'batch_loss': 25.68359375, 'querys': {'A Roman coliseum': ('Refined Prompt: Enter the iconic Roman coliseum, a remnant of ancient grandeur where gladiators once battled amidst cheering crowds. The weathered stone walls bear witness to centuries of history and spectacle. Imagine the adrenaline-fueled fights, the clash of swords, and the collective roar of the audience, transporting you back to a time of fierce competition and entertainment in the heart of Rome.', 25.68359375)}}}
+Iteration 9/10 --- Average loss in the instruction where source is 'generated': 25.78125
+highest_score_instruction:Craft concise prompts that focus on portraying the defining characteristics and behaviors of the main subject, like the tiger, in a clear and compelling manner to effectively capture the essence of the scene. Encourage prompts to emphasize the unique attributes of the tiger in the jungle setting, ensuring coherence and impact in the responses. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive while avoiding unnecessary complexity and embellishment., score25.87890625
+dict_items([('A Roman coliseum', ('Refined Prompt: Enter the iconic Roman coliseum, a remnant of ancient grandeur where gladiators once battled amidst cheering crowds. The weathered stone walls bear witness to centuries of history and spectacle. Imagine the adrenaline-fueled fights, the clash of swords, and the collective roar of the audience, transporting you back to a time of fierce competition and entertainment in the heart of Rome.', 25.68359375))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Prioritize highlighting the behaviors, characteristics, and interactions of the main subject, such as turtles nesting on the beach, in a concise and focused manner to effectively capture the essence of the scene. Avoid unnecessary complexity and embellishment, maintaining a clear and engaging narrative.
+ and first corresponding generated low score prompts group:
+low_score_object0:A Roman coliseum, low_score_generated_prompt:Refined Prompt: Enter the iconic Roman coliseum, a remnant of ancient grandeur where gladiators once battled amidst cheering crowds. The weathered stone walls bear witness to centuries of history and spectacle. Imagine the adrenaline-fueled fights, the clash of swords, and the collective roar of the audience, transporting you back to a time of fierce competition and entertainment in the heart of Rome., score:25.68359375
+below is high score prompts group:
+high_score_object0:A Roman coliseum, high_score_prompt:Create a hyper-realistic photography of colosseum in the unique and symmetrical style of stanley kubrick, add subtle and meticulous details to accentuate stanley kubrick's style, ensure that the colors are vibrant and contrasting, the composition must be perfectly symmetrical and capture the quintessence of stanley kubrick cinematic style,score:26.0498046875
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts showcase an excessive focus on elaborate descriptions and historical context of the Roman coliseum, which surpass the instruction for concise prompts. While the prompts aim to create an immersive narrative, they may get too detailed, delving into a historical reflection rather than succinctly capturing the essential elements of the scene. This can lead to a lack of clarity and a narrative that feels overly embellished.
+
+Improvement 1: Reinforce the need for crafting concise prompts that effectively highlight the key elements of the scene or subject without delving too deeply into historical context. Encourage the prompts to concentrate on the essential details defining the Roman coliseum, such as its structure and significance, in a clear and focused manner. Providing guidelines on how to maintain a balance between depth and conciseness can assist in creating more impactful and coherent responses.
+
+Inference 2: The low score prompts may lack a specific focus on presenting the interactions, behaviors, and characteristics of the main subject - in this case, the Roman coliseum itself. Instead of highlighting the architectural marvel or the events that occurred within, the prompts delve more into creating an atmospheric and historical narrative, potentially missing out on the essence of the coliseum.
+
+Improvement 2: Prompt the generation of responses that center around portraying the defining features, interactions, or significance of the main subject - the Roman coliseum - in a concise and engaging manner. Encourage the prompts to emphasize the characteristics and importance of the coliseum itself, rather than delving into detailed historical events or aspects. By highlighting the unique elements of the subject, the prompts can effectively capture the essence of the scene while maintaining clarity and engagement.
+analyze_and_propose: improvement: Reinforce the need for crafting concise prompts that effectively highlight the key elements of the scene or subject without delving too deeply into historical context. Encourage the prompts to concentrate on the essential details defining the Roman coliseum, such as its structure and significance, in a clear and focused manner. Providing guidelines on how to maintain a balance between depth and conciseness can assist in creating more impactful and coherent responses.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that focus on the key elements defining various scenes or subjects, ensuring clarity and coherence in the responses. Encourage prompts to concentrate on the essential details that define the Roman coliseum, such as its structure and significance, in a clear and focused manner. Provide guidelines on maintaining a balance between depth and conciseness to assist in creating impactful and coherent responses while avoiding unnecessary complexity and embellishment.
+analyze_and_propose: improvement: Prompt the generation of responses that center around portraying the defining features, interactions, or significance of the main subject - the Roman coliseum - in a concise and engaging manner. Encourage the prompts to emphasize the characteristics and importance of the coliseum itself, rather than delving into detailed historical events or aspects. By highlighting the unique elements of the subject, the prompts can effectively capture the essence of the scene while maintaining clarity and engagement.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that focus on portraying the defining features, interactions, or significance of the main subject, such as the Roman coliseum, in a concise and engaging manner. Encourage prompts to emphasize the characteristics and importance of the coliseum itself, capturing the essence of the scene while maintaining clarity and engagement. Strive to highlight the unique elements of the subject without delving into detailed historical events or aspects, ensuring a focused and impactful narrative. Avoid unnecessary complexity and embellishment to keep the prompts clear and engaging.
+
+Iteration 10/10
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['setting.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['setting.']
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:25.2197265625
+ loss: 25.2197265625
+100% 50/50 [00:11<00:00,  4.21it/s]
+score:24.23095703125
+ loss: 24.23095703125
+100% 50/50 [00:11<00:00,  4.18it/s]
+score:23.79150390625
+ loss: 23.79150390625
+100% 50/50 [00:11<00:00,  4.34it/s]
+score:22.5341796875
+ loss: 22.5341796875
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+100% 50/50 [00:11<00:00,  4.44it/s]
+score:22.7294921875
+ loss: 22.7294921875
+100% 50/50 [00:11<00:00,  4.48it/s]
+score:25.634765625
+ loss: 25.634765625
+25.2197265625
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['scents that define the essence of the valley with wildflowers.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['scents that define the essence of the valley with wildflowers.']
+100% 50/50 [00:11<00:00,  4.46it/s]
+score:24.71923828125
+ loss: 24.71923828125
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:25.8056640625
+ loss: 25.8056640625
+100% 50/50 [00:11<00:00,  4.27it/s]
+score:24.74365234375
+ loss: 24.74365234375
+100% 50/50 [00:11<00:00,  4.36it/s]
+score:22.55859375
+ loss: 22.55859375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:22.81494140625
+ loss: 22.81494140625
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:23.10791015625
+ loss: 23.10791015625
+24.71923828125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['influence.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['influence.']
+100% 50/50 [00:11<00:00,  4.45it/s]
+score:19.54345703125
+ loss: 19.54345703125
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: [', greg rutowski, james gurney, zeen chin']
+100% 50/50 [00:11<00:00,  4.28it/s]
+score:23.08349609375
+ loss: 23.08349609375
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:24.4140625
+ loss: 24.4140625
+100% 50/50 [00:11<00:00,  4.38it/s]
+score:23.4130859375
+ loss: 23.4130859375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:22.10693359375
+ loss: 22.10693359375
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:22.9248046875
+ loss: 22.9248046875
+19.54345703125
+completed
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['still captivates visitors from around the world.']
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ['still captivates visitors from around the world.']
+100% 50/50 [00:11<00:00,  4.43it/s]
+score:20.66650390625
+ loss: 20.66650390625
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:22.76611328125
+ loss: 22.76611328125
+100% 50/50 [00:11<00:00,  4.30it/s]
+score:23.779296875
+ loss: 23.779296875
+100% 50/50 [00:11<00:00,  4.37it/s]
+score:22.412109375
+ loss: 22.412109375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:24.25537109375
+ loss: 24.25537109375
+100% 50/50 [00:11<00:00,  4.42it/s]
+score:22.57080078125
+ loss: 22.57080078125
+20.66650390625
+top_instr:{'Craft concise prompts that focus on portraying the defining characteristics and behaviors of the main subject, like the tiger, in a clear and compelling manner to effectively capture the essence of the scene. Encourage prompts to emphasize the unique attributes of the tiger in the jungle setting, ensuring coherence and impact in the responses. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive while avoiding unnecessary complexity and embellishment.': {'batch_loss': 25.2197265625, 'querys': {'Valley with wildflowers': ("Refined Prompt: Wander through a picturesque valley adorned with a vibrant tapestry of wildflowers, their hues painting the landscape in a kaleidoscope of colors. The delicate petals sway in the gentle breeze, releasing a sweet fragrance that perfumes the air. Visitors are entranced by the beauty of the wildflowers, feeling a sense of peace and harmony amidst nature's bountiful display in the serene valley setting.", 25.2197265625)}}, 'Craft concise prompts that succinctly capture the essence of various scenes or subjects by focusing on essential details, ensuring clarity and coherence in the responses while avoiding unnecessary complexity and embellishment to maintain a clear and impactful narrative. Encourage prompts to concentrate on the key elements that define the main subject, like the tiger in the jungle, using a clear and focused narrative for impactful and coherent descriptions.': {'batch_loss': 24.71923828125, 'querys': {'Valley with wildflowers': ('Refined Prompt: Delve into a serene valley blooming with a diverse array of wildflowers, their vibrant colors creating a mesmerizing sight against the backdrop of lush greenery. Each delicate blossom sways with grace in the gentle breeze, releasing a subtle fragrance that lingers in the air. Visitors are enveloped in a sense of tranquility and natural beauty, experiencing a harmonious blend of colors and scents that define the essence of the valley with wildflowers.', 24.71923828125)}}, 'Craft concise prompts that focus on portraying the defining features, interactions, or significance of the main subject, such as the Roman coliseum, in a concise and engaging manner. Encourage prompts to emphasize the characteristics and importance of the coliseum itself, capturing the essence of the scene while maintaining clarity and engagement. Strive to highlight the unique elements of the subject without delving into detailed historical events or aspects, ensuring a focused and impactful narrative. Avoid unnecessary complexity and embellishment to keep the prompts clear and engaging.': {'batch_loss': 20.66650390625, 'querys': {'Valley with wildflowers': ('Refined Prompt: Stand in awe of the majestic Roman Coliseum, a monumental testament to ancient engineering and grandeur. The towering stone structure, once the epicenter of gladiator contests and elaborate events, embodies the spirit of Roman dominance and cultural prowess. As you gaze at the enduring arches and corridors, envision the echoes of history and the enduring legacy of this iconic amphitheater that still captivates visitors from around the world.', 20.66650390625)}}}
+Iteration 10/10 --- Average loss in the instruction where source is 'generated': 23.53515625
+highest_score_instruction:Craft concise prompts that focus on portraying the defining characteristics and behaviors of the main subject, like the tiger, in a clear and compelling manner to effectively capture the essence of the scene. Encourage prompts to emphasize the unique attributes of the tiger in the jungle setting, ensuring coherence and impact in the responses. By highlighting the distinctive features of the subject, the prompts can become more engaging and immersive while avoiding unnecessary complexity and embellishment., score25.2197265625
+dict_items([('Valley with wildflowers', ('Refined Prompt: Stand in awe of the majestic Roman Coliseum, a monumental testament to ancient engineering and grandeur. The towering stone structure, once the epicenter of gladiator contests and elaborate events, embodies the spirit of Roman dominance and cultural prowess. As you gaze at the enduring arches and corridors, envision the echoes of history and the enduring legacy of this iconic amphitheater that still captivates visitors from around the world.', 20.66650390625))])
+Analyze the following low score and high score batch, each prompt with corresponding scores. And infer what's wrong with the instruction generating low score batch prompt to suggest the improvement of the instruction :
+      For your answer use the format:
+Inference 1: your inference
+Inferecne 2: your inference
+ Inference n: your inference...
+
+Improvement 1: you suggested improvement correspond to inference 1
+Improvement 2: you suggested improvement correspond to Inference 2
+ Improvement n: you suggested improvement correspond to inference n...
+This is the generator instruction:Craft concise prompts that focus on portraying the defining features, interactions, or significance of the main subject, such as the Roman coliseum, in a concise and engaging manner. Encourage prompts to emphasize the characteristics and importance of the coliseum itself, capturing the essence of the scene while maintaining clarity and engagement. Strive to highlight the unique elements of the subject without delving into detailed historical events or aspects, ensuring a focused and impactful narrative. Avoid unnecessary complexity and embellishment to keep the prompts clear and engaging.
+ and first corresponding generated low score prompts group:
+low_score_object0:Valley with wildflowers, low_score_generated_prompt:Refined Prompt: Stand in awe of the majestic Roman Coliseum, a monumental testament to ancient engineering and grandeur. The towering stone structure, once the epicenter of gladiator contests and elaborate events, embodies the spirit of Roman dominance and cultural prowess. As you gaze at the enduring arches and corridors, envision the echoes of history and the enduring legacy of this iconic amphitheater that still captivates visitors from around the world., score:20.66650390625
+below is high score prompts group:
+high_score_object0:Valley with wildflowers, high_score_prompt:A serene and majestic spring landscape view into a deep valley gorge filled with a variety of blooming flowers, there is a small stream flowing down the gorge, bright daylight, 8k photo-realistic,score:25.8056640625
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts have deviated significantly from the instruction, focusing on the Roman Coliseum instead of the designated subject, a Valley with Wildflowers. The prompts delve into describing the historical and architectural significance of the Coliseum, which is not aligned with the essence of a serene valley with wildflowers. This discrepancy results in a prompt that fails to capture the intended subject and lacks relevance.
+
+Improvement 1: Clarify the guidelines to ensure prompts are centered on the assigned subject, in this case, a Valley with Wildflowers. Provide examples or instructions that clearly outline the characteristics and elements that should be highlighted in the prompts based on the designated subject. Encouraging a direct focus on the subject matter can help avoid off-topic responses and ensure coherence in the prompts.
+
+Inference 2: The low score prompts feature an overwhelming amount of detail and historical context related to the Roman Coliseum, which detracts from the concise and engaging approach required. The prompts elaborate extensively on the architectural features, events, and cultural significance of the Coliseum, leading to verbosity and a lack of focus on the essential elements of the scene.
+
+Improvement 2: Reinforce the importance of crafting concise prompts that effectively convey the defining features and interactions of the designated subject in a clear and engaging manner. Encourage a more streamlined and focused narrative that highlights the unique characteristics of a Valley with Wildflowers without unnecessary historical elaborations. Providing specific guidance on maintaining brevity while emphasizing the subject's essence can help improve the relevance and impact of the generated prompts.
+analyze_and_propose: improvement: Clarify the guidelines to ensure prompts are centered on the assigned subject, in this case, a Valley with Wildflowers. Provide examples or instructions that clearly outline the characteristics and elements that should be highlighted in the prompts based on the designated subject. Encouraging a direct focus on the subject matter can help avoid off-topic responses and ensure coherence in the prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts focused on portraying the defining features and characteristics of the assigned subject, a Valley with Wildflowers. Encourage prompts to highlight the elements and key attributes of the valley, such as the vibrant wildflowers, natural beauty, and serene atmosphere, in a clear and engaging manner. By emphasizing the subject matter directly, the prompts can maintain coherence and relevance, encouraging on-topic and immersive responses. Avoid unnecessary complexity or embellishment to ensure clarity and engagement in the generated prompts.
+analyze_and_propose: improvement: Reinforce the importance of crafting concise prompts that effectively convey the defining features and interactions of the designated subject in a clear and engaging manner. Encourage a more streamlined and focused narrative that highlights the unique characteristics of a Valley with Wildflowers without unnecessary historical elaborations. Providing specific guidance on maintaining brevity while emphasizing the subject's essence can help improve the relevance and impact of the generated prompts.
+completed
+analyze_and_propose: Updated Instruction: Craft concise prompts that effectively convey the defining features and interactions of the assigned subject, a Valley with Wildflowers, in a clear and engaging manner. Encourage a streamlined and focused narrative that highlights the unique characteristics of the valley without unnecessary historical elaborations. Provide specific guidance on maintaining brevity while emphasizing the essence of the subject to improve the relevance and impact of the generated prompts.
+
+Optimization completed.

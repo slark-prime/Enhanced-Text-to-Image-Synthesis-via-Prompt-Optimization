@@ -16,12 +16,14 @@ NEW_INSTRUCTION_NUM = 5
 API_KEY = ""
 ORG = ""
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 
 class SD:
     def __init__(self) -> None:
         self.model_id = "stabilityai/sdxl-turbo"
         self.pipe = AutoPipelineForText2Image.from_pretrained(self.model_id, torch_dtype=torch.float16,
-                                                              variant="fp16").to("cuda")
+                                                              variant="fp16").to(device)
 
 
 def default_value():
@@ -305,7 +307,7 @@ class AgentsPipline:
             selector = self.epsilon_greedy_instr_selection
         elif selection_method == "ucb":
             selector = self.ucb
-        with open('../data/naive_prompts.txt', 'r') as file:
+        with open('data/naive_prompts.txt', 'r') as file:
             query_list = [line.strip() for line in file.readlines()]
 
         for iteration in range(iterations):

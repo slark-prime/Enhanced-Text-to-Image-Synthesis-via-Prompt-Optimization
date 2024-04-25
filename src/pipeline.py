@@ -175,7 +175,10 @@ class AgentsPipline:
                 if q not in self.query_to_prompt:
                     self.query_to_prompt[q] = []
                 self.query_to_prompt[q].append(prompt_score_tuple)
-
+            instruction_dic["batch_loss"] = inst_batch_loss / len(query)
+            print(instruction_dic["batch_loss"])
+            instruction_list[instruction] = instruction_dic
+        for q in query:
                 # fetch prompt from lexico and add the tuple into all prompt pool
                 # lexica_prompts = self.fetch_prompts_from_lexica(q)
                 lexica_prompts = self.fetch_prompts_from_jsonl(q, file_path="data/lexica_prompts.jsonl")
@@ -187,9 +190,7 @@ class AgentsPipline:
 
                 self.query_to_prompt[q] = sorted(self.query_to_prompt[q], key=lambda x: x[1])
 
-            instruction_dic["batch_loss"] = inst_batch_loss / len(query)
-            print(instruction_dic["batch_loss"])
-            instruction_list[instruction] = instruction_dic
+            
 
     def analyze_and_propose(self):
         # Extract highest and lowest scores

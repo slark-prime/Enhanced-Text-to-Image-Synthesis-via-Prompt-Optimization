@@ -27,7 +27,5 @@ def experiment_selection_method():
         score_trend_select_method.append(pipe.training_p_s)
         final_instruct_method.append(pipe.final_instruction)
 
-def gpt3.5_baseline():
-    pass
 
 

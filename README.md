@@ -14,7 +14,7 @@
 ```
 
 # Experiments
-- [ ] UCB batch 1 with lexica
+- [ ] UCB batch 1 with lexica （anthony-doing now)
 - [x] UCB batch 3 with lexica (partly with 7/10 iterations)
 - [ ] UCB batch 5 with lexica
 - [ ] UCB batch 3 without lexica

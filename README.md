@@ -15,7 +15,7 @@
 
 # Experiments
 - [ ] UCB batch 1 with lexica
-- [ ] UCB batch 3 with lexica
+- [x] UCB batch 3 with lexica (partly with 7/10 iterations)
 - [ ] UCB batch 5 with lexica
 - [ ] UCB batch 3 without lexica
 - [ ] greedy batch 3 with lexica

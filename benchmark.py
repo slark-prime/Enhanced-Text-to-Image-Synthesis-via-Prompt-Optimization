@@ -86,7 +86,7 @@ def lexica_baseline_test(queries):
 
     for i, query in enumerate(queries):
         # Fetching a prompt based on the query from a JSONL file
-        fetched_prompt = random.sample(fetch_prompts_from_jsonl(query, "data/lexica_prompts.jsonl"))
+        fetched_prompt = random.sample(fetch_prompts_from_jsonl(query, "data/lexica_prompts.jsonl"), 1)
         print(f"Fetched prompt: {fetched_prompt}")
 
         # Assuming a generate_image method in a Diffuser class that returns an image object

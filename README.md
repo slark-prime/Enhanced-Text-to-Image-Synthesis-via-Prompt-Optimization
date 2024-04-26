@@ -16,7 +16,7 @@
 # Experiments
 - [x] UCB batch 1 with lexica （anthony-done now)
 - [x] UCB batch 3 with lexica (partly with 7/10 iterations)
-- [ ] UCB batch 5 with lexica (anthony doing now)
+- [x] UCB batch 5 with lexica (anthony-done 4 iters)
 - [x] UCB batch 3 without lexica 
 - [ ] greedy batch 3 with lexica
 - [x] epsilon greedy batch 3 with lexica

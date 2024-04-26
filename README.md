@@ -19,5 +19,5 @@
 - [ ] UCB batch 5 with lexica
 - [ ] UCB batch 3 without lexica
 - [ ] greedy batch 3 with lexica
-- [ ] epsilon greedy batch 3 with lexica
+- [ ] epsilon greedy batch 3 with lexica (Under experiment)
 - [ ] gpt3.5 baseline 

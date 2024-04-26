@@ -17,6 +17,9 @@ scorer = Scorer()
 
 def gpt_baseline_test(queries):
     print("Running GPT-3 baseline...")
+
+    os.makedirs("results/test_SD_images", exist_ok=True)
+
     baseline_generator = Generator(api_key=API_KEY, org=ORG)
     score_sum = 0
     image_scores = {}  # Dictionary to track scores for each image
@@ -49,6 +52,9 @@ def gpt_baseline_test(queries):
 
 def lexica_baseline_test(queries):
     print("Running Lexica baseline...")
+
+    os.makedirs("results/test_lexica_images", exist_ok=True)
+
     score_sum = 0
     image_scores = {}  # Dictionary to track scores for each image
 
@@ -84,6 +90,8 @@ def gpt_ucb_instruction_test(queries, instruction, test_id):
     baseline_generator = Generator(api_key=API_KEY, org=ORG)
     score_sum = 0
     image_scores = {}  # Dictionary to track scores for each image
+
+    os.makedirs(f"results/test_ucb{test_id}_images", exist_ok=True)
 
     for i, query in enumerate(queries):
         refined_instruction = f"{instruction}, Prompt or subject to refine : {query}"

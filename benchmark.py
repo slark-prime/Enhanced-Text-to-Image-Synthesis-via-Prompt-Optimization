@@ -1,7 +1,7 @@
 import os
 import random
 
-from agents import Generator, Scorer
+from src.agents import Generator, Scorer
 from src.pipeline import SD, AgentsPipline
 
 API_KEY = ""
@@ -17,7 +17,7 @@ scorer = Scorer()
 
 def gpt_baseline_test(queries):
     print("Running GPT-3 baseline...")
-    baseline_generator = Generator(api_key="API_KEY", org="ORG")
+    baseline_generator = Generator(api_key=API_KEY, org=ORG)
     score_sum = 0
     image_scores = {}  # Dictionary to track scores for each image
 
@@ -81,7 +81,7 @@ def lexica_baseline_test(queries):
 
 def gpt_ucb_instruction_test(queries, instruction, test_id):
     print(f"Running GPT-3.5 with UCB {test_id} instruction baseline...")
-    baseline_generator = Generator(api_key="API_KEY", org="ORG")
+    baseline_generator = Generator(api_key=API_KEY, org=ORG)
     score_sum = 0
     image_scores = {}  # Dictionary to track scores for each image
 

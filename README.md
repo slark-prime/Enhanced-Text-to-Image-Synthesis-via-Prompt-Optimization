@@ -17,7 +17,7 @@
 - [x] UCB batch 1 with lexica （anthony-done now)
 - [x] UCB batch 3 with lexica (partly with 7/10 iterations)
 - [ ] UCB batch 5 with lexica (anthony doing now)
-- [ ] UCB batch 3 without lexica
+- [ ] UCB batch 3 without lexica (doing)
 - [ ] greedy batch 3 with lexica
 - [x] epsilon greedy batch 3 with lexica
 - [ ] gpt3.5 baseline 

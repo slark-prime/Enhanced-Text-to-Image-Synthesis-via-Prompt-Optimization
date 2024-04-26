@@ -64,7 +64,8 @@ def gpt_baseline_test(queries):
         print(f"Score: {score}")
 
         score_sum += score
-        image_scores[image_path] = score
+        image_scores[image_path] = (score, generated_prompt)
+
 
     average_score = score_sum / len(queries)
     print(f"Average score: {average_score}")
@@ -98,7 +99,7 @@ def lexica_baseline_test(queries):
         print(f"Score: {score}")
 
         score_sum += score
-        image_scores[image_path] = score
+        image_scores[image_path] = (score,  fetched_prompt)
 
     average_score = score_sum / len(queries)
     print(f"Average score: {average_score}")
@@ -133,7 +134,7 @@ def gpt_ucb_instruction_test(queries, instruction, test_id):
         print(f"Score: {score}")
 
         score_sum += score
-        image_scores[image_path] = score
+        image_scores[image_path] = (score,  generated_prompt)
 
     average_score = score_sum / len(queries)
     print(f"Average score: {average_score}")

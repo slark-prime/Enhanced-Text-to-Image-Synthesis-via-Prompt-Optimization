@@ -14,10 +14,10 @@
 ```
 
 # Experiments
-[] UCB batch 1 with lexica
-[] UCB batch 3 with lexica
-[] UCB batch 5 with lexica
-[] UCB batch 3 without lexica
-[] greedy batch 3 with lexica
-[] epsilon greedy batch 3 with lexica
-[] gpt3.5 baseline 
+- [] UCB batch 1 with lexica
+- [] UCB batch 3 with lexica
+- [] UCB batch 5 with lexica
+- [] UCB batch 3 without lexica
+- [] greedy batch 3 with lexica
+- [] epsilon greedy batch 3 with lexica
+- [] gpt3.5 baseline 

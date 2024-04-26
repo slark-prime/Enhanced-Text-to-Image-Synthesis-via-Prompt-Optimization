@@ -18,3 +18,21 @@ Inference 3: The low score prompts lacked a certain level of cohesion and connec
 Improvement 1: Encourage writers to strike a delicate balance between realistic touches and unexpected twists to create prompts that are both relatable and captivating, ensuring that the imaginative elements enhance rather than overshadow the core narrative.
 Improvement 2: Challenge writers to think outside traditional narratives or expected outcomes when infusing prompts with unexpected twists, pushing them to explore more unique and unconventional ideas that can truly surprise and engage readers.
 Improvement 3: Provide guidance on weaving unexpected elements seamlessly into the original setting of the prompts, ensuring a smooth transition that maintains coherence and enhances the overall impact of the narrative twist.
+
+
+lack of  creativity and complexity in prompt
+low_score_object0:River with kayak, low_score_generated_prompt:Refined Prompt: A kayak peacefully gliding along a scenic river, illustrating the tranquility and harmony of nature and human interaction on the water., score:26.513671875
+low_score_object1:Ocean with dolphins, low_score_generated_prompt:Refined Prompt: Dolphins gracefully swimming in the ocean, embodying the beauty and freedom of marine life in their natural habitat., score:27.63671875
+low_score_object2:Aquarium with sharks, low_score_generated_prompt:Refined Prompt: A captivating aquarium display featuring powerful sharks, offering a glimpse into the mysterious world of these majestic creatures in a controlled and mesmerizing environment., score:27.587890625
+below is high score prompts group:
+high_score_object0:River with kayak, high_score_prompt:Back view of a whitewater kayaking, down a white water rapid river in the mountains, high quality photo, cinematic shot, realistic, film grain, volumetric light, imax, photorealistic, hyperealistic water,score:26.806640625
+high_score_object1:Ocean with dolphins, high_score_prompt:A mother dolphin guiding her young calf to explore a hidden underwater cave filled with treasures from the deep,score:29.0283203125
+high_score_object2:Aquarium with sharks, high_score_prompt:Refined Prompt: An aquarium exhibit featuring majestic sharks gliding effortlessly through the water, their sleek bodies cutting through the vibrant underwater environment. The scene conveys the awe-inspiring presence of these apex predators in a controlled and captivating setting, highlighting their power and grace while inviting viewers to marvel at the wonders of the ocean depths.,score:28.5400390625
+completed
+analyze_and_propose: Summary of Reasons for Scores:Inference 1: The low score prompts generated have a tendency to focus more on general descriptions and fail to incorporate unique or specific details that could enhance the prompt's appeal.
+Inference 2: The low score prompts lack originality and creativity, sticking to conventional and expected imagery and themes without introducing innovative elements.
+Inference 3: The low score prompts lack depth and fail to evoke a sense of intrigue or engagement, missing opportunities to add layers of complexity or emotion to the scenes described.
+
+Improvement 1: Encourage writers to introduce unique and specific details in their prompts to make them more engaging and memorable, moving beyond generic descriptions.
+Improvement 2: Emphasize the importance of creativity and originality in prompt generation, encouraging writers to think outside the box and incorporate unexpected elements to pique the reader's interest.
+Improvement 3: Suggest adding layers of depth to the prompts by including emotional or thematic nuances that can create a more immersive and thought-provoking experience for the audience.

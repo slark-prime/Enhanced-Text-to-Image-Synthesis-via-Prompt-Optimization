@@ -1,0 +1,47 @@
+Loading pipeline components...: 100% 7/7 [00:24<00:00,  3.55s/it]
+Running Lexica baseline...
+Fetched prompt: ['Barrel cactus with flowers geometric realistic art']
+100% 50/50 [00:05<00:00,  9.17it/s]
+score:26.6357421875
+Score: 26.6357421875
+Fetched prompt: ['Pen and ink, illustrated by hergé, crowded carnival']
+100% 50/50 [00:05<00:00,  9.86it/s]
+score:25.0244140625
+Score: 25.0244140625
+Fetched prompt: ['Futuriatic gothic cathedral skyscraper tower high apace complex extreme super hyper ultra bridge city']
+100% 50/50 [00:05<00:00,  9.71it/s]
+score:25.09765625
+Score: 25.09765625
+Fetched prompt: ["Bird's flight, children in the park notice a paper airplane and start chasing it, green hill, clouds pink, cartoon, anime, 8k, blue sky, city, bulding"]
+100% 50/50 [00:05<00:00,  9.64it/s]
+score:24.1943359375
+Score: 24.1943359375
+Fetched prompt: ['High quality, quality8k, steam locomotive running in cosmic space, neon, grand canyon']
+100% 50/50 [00:05<00:00,  9.93it/s]
+score:26.8798828125
+Score: 26.8798828125
+Fetched prompt: ['Generate a vivid picture of volcanic erruption with lava spilling out in a surreal manner']
+100% 50/50 [00:05<00:00,  9.54it/s]
+score:26.953125
+Score: 26.953125
+Fetched prompt: ['Magical land, universe stars, stars big space golden sun raise']
+100% 50/50 [00:05<00:00,  9.64it/s]
+score:26.0986328125
+Score: 26.0986328125
+Fetched prompt: ['"a japanese aphrodite standing in front of a pyramid in egypt" in a painting by rene magritte, surrealistic, 64k resolution, highly detailed, sharp image.']
+100% 50/50 [00:05<00:00,  9.83it/s]
+score:25.2685546875
+Score: 25.2685546875
+Fetched prompt: ['Arctic tundra']
+100% 50/50 [00:05<00:00,  9.55it/s]
+score:27.734375
+Score: 27.734375
+Fetched prompt: ["Enter the eerie world of the haunted mansion, a decaying manor shrouded in mystery and darkness. as you step through its creaking doors, you'll find yourself surrounded by flickering candles, cobweb-covered furniture, and portraits with eyes that seem to follow your every move. your task is to explore the mansion's haunted history, solving puzzles, and facing ghostly apparitions along the way. will you uncover the mansion's dark secrets, or will you become another lost soul within its haunted halls?"]
+Token indices sequence length is longer than the specified maximum sequence length for this model (105 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ["ghostly apparitions along the way. will you uncover the mansion's dark secrets, or will you become another lost soul within its haunted halls?"]
+Token indices sequence length is longer than the specified maximum sequence length for this model (105 > 77). Running this sequence through the model will result in indexing errors
+The following part of your input was truncated because CLIP can only handle sequences up to 77 tokens: ["ghostly apparitions along the way. will you uncover the mansion's dark secrets, or will you become another lost soul within its haunted halls?"]
+100% 50/50 [00:05<00:00,  9.75it/s]
+score:27.5634765625
+Score: 27.5634765625
+Average score: 26.14501953125

@@ -1,8 +1,33 @@
+import json
 import os
 import random
 
 from src.agents import Generator, Scorer
 from src.pipeline import SD, AgentsPipline
+
+
+def fetch_prompts_from_jsonl(query_filter, file_path="lexica_prompts.txt"):
+    """
+    Fetches prompts from a local .jsonl file, filtering based on the provided query.
+
+    :param file_path: Path to the local .jsonl file.
+    :param query_filter: The query to filter prompts by.
+    :return: A list of prompts matching the given query.
+    """
+    prompts = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                # Parse the JSON object from each line
+                obj = json.loads(line.strip())
+                # Check if the object's query matches the filter, and if so, add the prompt to our list
+                if obj.get('query') == query_filter:
+                    prompts.append(obj.get('prompt'))
+        return prompts
+    except Exception as e:
+        print(f"Failed to fetch prompts from the local file: {e}")
+        return []
+
 
 API_KEY = ""
 ORG = ""
@@ -60,7 +85,7 @@ def lexica_baseline_test(queries):
 
     for i, query in enumerate(queries):
         # Fetching a prompt based on the query from a JSONL file
-        fetched_prompt = AgentsPipline.fetch_prompts_from_jsonl(query, "data/lexica_prompts.jsonl")
+        fetched_prompt = random.sample(fetch_prompts_from_jsonl(query, "data/lexica_prompts.jsonl"))
         print(f"Fetched prompt: {fetched_prompt}")
 
         # Assuming a generate_image method in a Diffuser class that returns an image object
@@ -80,7 +105,7 @@ def lexica_baseline_test(queries):
 
     # Save the scores for future analysis
     os.makedirs("results/test_lexica_images", exist_ok=True)  # Ensure directory exists
-    with open("./test_lexica_images/score_log.txt", "w") as file:
+    with open("results/test_lexica_images/score_log.txt", "w") as file:
         for path, score in image_scores.items():
             file.write(f"{path}: {score}\n")
 
@@ -121,15 +146,17 @@ def gpt_ucb_instruction_test(queries, instruction, test_id):
 
 
 def benchmark():
+    random.seed(777)
     to_query = random.sample(query_list, 10)
-    gpt_baseline_test(to_query)
-    lexica_baseline_test(to_query)
+
+    # gpt_baseline_test(to_query)
+    # lexica_baseline_test(to_query)
 
     ucb_1_instruction = "Integrate exercises that challenge writers to distill their descriptions to the most essential elements while effectively evoking the desired emotions, reinforcing the lesson on brevity and precision in storytelling. Emphasize the use of impactful language and imagery to succinctly capture the essence of a scene and immerse the reader in a cohesive narrative that evokes awe, wonder, and exploration, ultimately igniting feelings of exhilaration and reverence for the boundless beauty and possibilities within the depicted setting"
     ucb_3_instruction = "Structure prompts for a coherent flow of ideas and imagery, ensuring immersive and compelling descriptions with a clear and "
     ucb_5_instruction = ""
 
-    gpt_ucb_instruction_test(to_query, ucb_1_instruction, 1)
+    # gpt_ucb_instruction_test(to_query, ucb_1_instruction, 1)
     gpt_ucb_instruction_test(to_query, ucb_3_instruction, 3)
     gpt_ucb_instruction_test(to_query, ucb_5_instruction, 5)
 

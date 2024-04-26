@@ -1,0 +1,10 @@
+results/test_SD_images/image_0.png: 27.1240234375
+results/test_SD_images/image_1.png: 26.611328125
+results/test_SD_images/image_2.png: 26.8798828125
+results/test_SD_images/image_3.png: 26.9287109375
+results/test_SD_images/image_4.png: 26.46484375
+results/test_SD_images/image_5.png: 26.4404296875
+results/test_SD_images/image_6.png: 26.123046875
+results/test_SD_images/image_7.png: 25.87890625
+results/test_SD_images/image_8.png: 24.5361328125
+results/test_SD_images/image_9.png: 26.3671875

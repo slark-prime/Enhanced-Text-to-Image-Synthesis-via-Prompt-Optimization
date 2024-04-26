@@ -1,4 +1,4 @@
-To Run in Notebooks: 
+# To Run in Notebooks: 
 
 ```shell
 !git clone https://github.com/slark-prime/MAAI_Optimizer.git
@@ -12,3 +12,12 @@ To Run in Notebooks:
 !pip install diffusers
 
 ```
+
+# Experiments
+[] UCB batch 1 with lexica
+[] UCB batch 3 with lexica
+[] UCB batch 5 with lexica
+[] UCB batch 3 without lexica
+[] greedy batch 3 with lexica
+[] epsilon greedy batch 3 with lexica
+[] gpt3.5 baseline 

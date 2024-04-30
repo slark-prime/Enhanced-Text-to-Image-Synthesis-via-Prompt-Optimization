@@ -47,4 +47,4 @@ Our project leverages a sophisticated Multi-Agent system to dynamically evolve t
 ## Project Paper
 For detailed information about the methodologies and technologies used in this project, refer to our [Batch-Instructed Gradient for Prompt Evolution:
 Systematic Prompt Optimization for Enhanced
-Text-to-Image Synthesis](Text-to-Image Synthesis via Prompt Optimization).
+Text-to-Image Synthesis](Text-to-Image Synthesis via Prompt Optimization.pdf).

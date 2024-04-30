@@ -20,7 +20,7 @@ Our project leverages a sophisticated Multi-Agent system to dynamically evolve t
 
 
 
-# To Run in Notebooks: 
+# To Run in Colab Notebooks: 
 
 ```shell
 !git clone https://github.com/slark-prime/MAAI_Optimizer.git

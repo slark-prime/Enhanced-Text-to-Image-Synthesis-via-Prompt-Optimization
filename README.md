@@ -34,7 +34,7 @@ Our project leverages a sophisticated Multi-Agent system to dynamically evolve t
 !pip install diffusers
 
 ```
-```
+```shell
 !python run.py
 ```
 # Experiments

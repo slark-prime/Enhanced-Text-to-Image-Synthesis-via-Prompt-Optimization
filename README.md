@@ -34,7 +34,9 @@ Our project leverages a sophisticated Multi-Agent system to dynamically evolve t
 !pip install diffusers
 
 ```
-
+```
+!python run.py
+```
 # Experiments
 - [x] UCB batch 1 with lexica 
 - [x] UCB batch 3 with lexica 

@@ -4,7 +4,7 @@
 This repository contains the source code and documentation for our project on systematic prompt optimization for enhanced text-to-image synthesis, developed at University College London. Our work introduces a novel approach using in-context gradient descent within a Multi-Agent framework to improve the quality of images generated from textual prompts.
 
 ## Project Overview
-Our project leverages a sophisticated Multi-Agent system to dynamically evolve the design of prompts used in text-to-image synthesis models. By integrating a professional prompts database(Lexicas) and utilizing advanced scoring functions like the Human Preference Score v2 (HPSv2), our system refines prompts to produce images that closely align with professional standards and human aesthetic preferences.
+Our project leverages a sophisticated system to dynamically evolve the design of prompts used in text-to-image synthesis models. By integrating a professional prompts database(Lexicas) and utilizing advanced scoring functions like the Human Preference Score v2 (HPSv2), our system refines prompts to produce images that closely align with professional standards and human aesthetic preferences.
 
 ### Key Features
 - **Prompt Optimization Algorithm**: Utilizes in-context gradient descent to refine prompts systematically.

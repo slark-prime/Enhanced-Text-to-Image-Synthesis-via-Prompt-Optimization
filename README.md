@@ -47,4 +47,4 @@ Our project leverages a sophisticated system to dynamically evolve the design of
 - [x] gpt3.5 baseline
 
 ## Project Paper
-For detailed information about the methodologies and technologies used in this project, refer to our [Batch-Instructed Gradient for Prompt Evolution: Systematic Prompt Optimization for Enhanced Text-to-Image Synthesis](Text-to-Image%20Synthesis%20via%20Prompt%20Optimization.pdf).
+For detailed information about the methodologies and technologies used in this project, refer to our [paper](https://arxiv.org/abs/2406.08713).
